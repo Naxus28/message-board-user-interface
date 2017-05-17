@@ -1,25 +1,25 @@
 {
-  "name": "user-interface",
+  "name": "message-board-user-interface",
   "version": "1.0.0",
-  "description": "A web design exercise inspired on a dribble interface",
+  "description": "Web design exercise inspired on a dribble interface",
   "main": "index.js",
   "scripts": {
     "postinstall": "bower install && gulp serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Naxus28/dribble-user-interface.git"
+    "url": "git+https://github.com/Naxus28/message-board-user-interface.git"
   },
   "keywords": [
-    "angular",
-    "todo"
+    "user interface",
+    "web design"
   ],
   "author": "Gabriel Ferraz <gabrielferraz27@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Naxus28/dribble-user-interface/issues"
+    "url": "https://github.com/Naxus28/message-board-user-interface/issues"
   },
-  "homepage": "https://github.com/Naxus28/dribble-user-interface#readme",
+  "homepage": "https://github.com/Naxus28/message-board-user-interface#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
