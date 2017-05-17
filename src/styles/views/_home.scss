@@ -1,0 +1,31 @@
+header.header-wrapper {
+  background: white;
+  display: flex;
+  border-bottom: 2px solid $mercury;
+}
+header.header-wrapper > div {
+  padding: .8em 1.6em;
+}
+div.header-wrapper__logo {
+  background: $puerto-rico;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-family: $paytone-one;
+  font-weight: 500;
+}
+div.header-wrapper__functionality {
+  flex-grow: 5;
+}
+div.header-wrapper__functionality-search {
+
+}
+div.header-wrapper__create-new {
+
+}
+div.header-wrapper__stats {
+
+}
+div.header-wrapper__user {
+
+}
