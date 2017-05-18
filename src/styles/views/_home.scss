@@ -5,8 +5,8 @@ header.header-wrapper {
   background: white;
 }
 div.header-wrapper__logo {
-  padding-left: 2.5em!important;
-  padding-right: 2.5em!important;
+  padding-left: 1.5em!important;
+  padding-right: 1.5em!important;
   align-items: center;
   background: $puerto-rico;
   color: white;
@@ -26,7 +26,7 @@ div.header-wrapper__functionality > div{
 div.header-wrapper__search {
   flex-grow: 4;
   align-items: center;
-  padding-left: 2em!important;
+  padding-left: 3em!important;
 }
 div.header-wrapper__search-inner { 
   flex: .8;
@@ -130,7 +130,7 @@ nav.vertical-nav {
   height: 100%;
 }
 nav.vertical-nav > div {
-  margin-top: 1em;
+  margin-top: .7em;
 }
 nav.vertical-nav > div p {
   padding: .7em 2em;
@@ -141,14 +141,32 @@ nav.vertical-nav > div p {
   font-size: .8em;
 }
 li.vertical-nav__list-item { 
-  padding: 1em 2em;
+  padding: .7em 2.35em;
   display: flex;
   align-items: center;
+  transition: all .3s ease;
+  &:hover {
+    color: white!important;
+    background: $shuttle-gray;
+    i {
+      color: white;
+    }
+  }
+  &:first-child {
+    padding-top: 1.4em;
+  }
   i {
+    transition: all .3s ease;
     font-size: 1.4em;
     padding-right: .5em;
     color: $mid-gray;
   }
+}
+
+//dasboard
+//
+article.dashboard-block {
+  background: $alabaster; 
 }
 
 
