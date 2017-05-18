@@ -1,6 +1,5 @@
 header.header-wrapper {
   background: white;
-  display: flex;
   border-bottom: 2px solid $mercury;
 }
 header.header-wrapper > div {
@@ -9,7 +8,6 @@ header.header-wrapper > div {
 div.header-wrapper__logo {
   padding-left: 2.5em!important;
   padding-right: 2.5em!important;
-  display: flex;
   align-items: center;
   background: $puerto-rico;
   color: white;
@@ -20,14 +18,12 @@ div.header-wrapper__logo {
 }
 div.header-wrapper__search {
   flex-grow: 5;
-  display: flex;
   align-items: center;
   padding-left: 2em!important;
 }
 div.header-wrapper__search-inner { 
   flex: .9;
   border-radius: 5px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   background: $gallery;
@@ -57,7 +53,6 @@ div.header-wrapper__search-inner {
   }
 }
 div.header-wrapper__create-new {
-  display: flex;
   flex-grow: 1;
   align-items: center;
   justify-content: flex-end;
@@ -81,7 +76,6 @@ div.header-wrapper__create-new {
 div.header-wrapper__alerts {
   flex: 1.7;
   justify-content: space-around;
-  display: flex;
   align-items: center;
   background: $gallery;
 }
@@ -96,7 +90,6 @@ div.header-wrapper__alerts-user-icon {
   padding-right: 2.8em;
 }
 div.header-wrapper__user {
-  display: flex;
   align-items: center;
 }
 div.header-wrapper__user-name {
