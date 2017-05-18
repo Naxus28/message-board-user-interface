@@ -1,9 +1,5 @@
 header.header-wrapper {
   background: white;
-  border-bottom: 2px solid $mercury;
-}
-header.header-wrapper > div {
-  padding: .6em 1.3em;
 }
 div.header-wrapper__logo {
   padding-left: 2.5em!important;
@@ -16,20 +12,28 @@ div.header-wrapper__logo {
   font-family: $paytone-one;
   font-weight: 500;
 }
+div.header-wrapper__functionality {
+  flex-grow: 1;
+  border-bottom: 2px solid $mercury;
+}
+
+div.header-wrapper__functionality > div{
+  padding: .5em 1.3em;
+}
 div.header-wrapper__search {
-  flex-grow: 5;
+  flex-grow: 4;
   align-items: center;
   padding-left: 2em!important;
 }
 div.header-wrapper__search-inner { 
-  flex: .9;
+  flex: .8;
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
   background: $gallery;
   input {
+    flex: 1;
     background: $gallery;
-    flex: .9;
     padding: .8em;
     padding-left: 1.5em;
     border: none;
@@ -37,6 +41,13 @@ div.header-wrapper__search-inner {
     border-bottom-left-radius: 3px;
   }
   i {
+    &.fa-chevron-down {
+      display: inline-block;
+      color: $loblolly;
+      padding: .5em;
+      margin-right: .2em;
+      font-size: .8em;
+    }
     &.fa-search {
       background: $loblolly;
       color: white;
@@ -44,40 +55,32 @@ div.header-wrapper__search-inner {
       border-bottom-right-radius: 3px;
       padding: .5em 1em;
     }
-    &.fa-chevron-down {
-      display: inline-block;
-      color: $loblolly;
-      padding: .5em;
-      font-size: .8em;
-    }
   }
 }
 div.header-wrapper__create-new {
   flex-grow: 1;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 10px;
   button {
     display: block;
     background: $burnt-sienna;
     border: none;
     color: white;
-    flex: .7;
-    padding: .8em 0;
+    padding: .7em 2em;
     font-size: .75em;
     border-radius: 3px;
     font-weight: 600;
     i {
       float: right;
-      margin-right: 10px;
+      margin-left: 10px;
     }
   }
 }
 div.header-wrapper__alerts {
-  flex: 1.7;
+  flex: .3;
   justify-content: space-around;
   align-items: center;
-  background: $gallery;
+  background: $alabaster;
 }
 div.header-wrapper__alerts-icon {
   i {
@@ -90,6 +93,8 @@ div.header-wrapper__alerts-user-icon {
   padding-right: 2.8em;
 }
 div.header-wrapper__user {
+  justify-content: flex-end;
+  padding-left: 2em;
   align-items: center;
 }
 div.header-wrapper__user-name {
@@ -102,6 +107,6 @@ div.header-wrapper__user-name {
 div.header-wrapper__user-img {
   img {
     border-radius: 50%;
-    width: 50px;
+    width: 55px;
   }
 }
