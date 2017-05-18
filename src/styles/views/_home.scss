@@ -17,25 +17,30 @@ div.header-wrapper__logo {
   font-size: 1.7em;
   font-family: $paytone-one;
   font-weight: 500;
-  span {
-    display: inline-block;
-  }
 }
-div.header-wrapper__functionality {
+div.header-wrapper__search {
   flex-grow: 5;
-}
-div.header-wrapper__functionality-search {
-
 }
 div.header-wrapper__create-new {
   display: flex;
-  align-item: center;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
   button {
+    display: block;
     background: $burnt-sienna;
     border: none;
     color: white;
-    padding: 1em 1.5em;
-    font-weight: 500;
+    flex: .7;
+    padding: .8em 0;
+    font-size: .75em;
+    border-radius: 3px;
+    font-weight: 600;
+    i {
+      float: right;
+      margin-right: 10px;
+    }
   }
 }
 div.header-wrapper__alerts {
@@ -59,7 +64,6 @@ div.header-wrapper__user {
   display: flex;
   align-items: center;
 }
-
 div.header-wrapper__user-name {
   margin-right: 10px;
   span {

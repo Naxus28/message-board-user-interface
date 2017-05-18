@@ -92,10 +92,8 @@ div.header-wrapper__logo {
   font-size: 1.7em;
   font-family: "Paytone One", sans-serif;
   font-weight: 500; }
-  div.header-wrapper__logo span {
-    display: inline-block; }
 
-div.header-wrapper__functionality {
+div.header-wrapper__search {
   -webkit-box-flex: 5;
   -ms-flex-positive: 5;
   flex-grow: 5; }
@@ -104,13 +102,31 @@ div.header-wrapper__create-new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-item: center; }
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 10px; }
   div.header-wrapper__create-new button {
+    display: block;
     background: #E6614F;
     border: none;
     color: white;
-    padding: 1em 1.5em;
-    font-weight: 500; }
+    -webkit-box-flex: .7;
+    -ms-flex: .7;
+    flex: .7;
+    padding: .8em 0;
+    font-size: .75em;
+    border-radius: 3px;
+    font-weight: 600; }
+    div.header-wrapper__create-new button i {
+      float: right;
+      margin-right: 10px; }
 
 div.header-wrapper__alerts {
   -webkit-box-flex: 1.7;
