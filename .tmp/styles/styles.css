@@ -90,5 +90,23 @@ div.header-wrapper__functionality {
   -ms-flex-positive: 5;
   flex-grow: 5; }
 
+div.header-wrapper__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+div.header-wrapper__user-name {
+  margin-right: 10px; }
+  div.header-wrapper__user-name span {
+    font-size: .9em;
+    font-weight: 600; }
+
+div.header-wrapper__user-img img {
+  border-radius: 50%;
+  width: 50px; }
+
 
 /*# sourceMappingURL=styles.css.map */
