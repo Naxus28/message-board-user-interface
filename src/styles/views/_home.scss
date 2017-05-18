@@ -130,15 +130,35 @@ nav.vertical-nav {
   height: 100%;
 }
 nav.vertical-nav > div {
-  margin-top: .7em;
+  padding-top: .7em;
 }
-nav.vertical-nav > div p {
-  padding: .7em 2em;
+nav.vertical-nav > div h3 {
+  padding: 1.4em 2em .8em;
   border-bottom: 1px solid $mid-gray;
   color: $mid-gray;
   text-transform: uppercase;
   font-weight: 600;
   font-size: .8em;
+}
+div.vertical-nav__main-items  {
+  padding-top: 0px!important;
+}
+div.vertical-nav__main-items-toggle {
+  border-bottom: 1px solid $mid-gray;
+  h3 {
+    flex: 1;
+    align-self: flex-end;
+    border-bottom: none!important;
+  }
+  i {
+    padding: 1em .5em;
+    background: $shuttle-gray;
+    transition: all .3s ease;
+    &:hover {
+      color: white;
+      background: $loblolly;
+    }
+  }
 }
 li.vertical-nav__list-item { 
   padding: .7em 2.35em;
@@ -161,6 +181,9 @@ li.vertical-nav__list-item {
     padding-right: .5em;
     color: $mid-gray;
   }
+}
+div.vertical-nav__main-items-toggle{
+  // margin-bottom: ;
 }
 
 //dasboard
