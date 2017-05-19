@@ -293,7 +293,16 @@ section.dashboard-block__message-board {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 150vw;
+  height: 590vh;
+
+  @media screen and (min-width: 140px) {
+    height: 320vh;
+  }
+
+  @media screen and (max-width: 1098px) {
+    flex-direction: row;
+    height: 100%!important;
+  }
 
 }
 div.dashboard-block__message-board-inner {
@@ -303,7 +312,10 @@ div.dashboard-block__message-board-inner {
   &:nth-child(odd) {
     margin-right: 2em;
   }
-  // flex-basis: 48%;
+  @media screen and (max-width: 1098px) {
+    width: 100%;
+    margin-right: 0px!important;
+  }
 }
 div.dashboard-block-header-container {
   padding: 1.5em;
@@ -388,7 +400,7 @@ div.dashboard-block__message-board-post-comment-input {
   margin-top: .3em;
   margin-bottom: 50px;
 
-  textarea {
+  input {
     flex: 1;
     padding-left: 1em;
     height: 35px;

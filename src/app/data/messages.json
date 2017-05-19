@@ -5,6 +5,7 @@
         "id": 1,
         "img": "user1",
         "name": "Josh",
+        "post_img": "country",
         "post_time": "2 hours ago",
         "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       },
@@ -51,6 +52,7 @@
         "id": 4,
         "name": "Megan",
         "img": "user4",
+        "post_img" : "valley",
         "post_time": "7 hours ago",
         "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       },

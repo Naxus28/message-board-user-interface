@@ -420,7 +420,17 @@ section.dashboard-block__message-board {
   -webkit-box-direction: normal;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 150vw; }
+  height: 590vh; }
+  @media screen and (min-width: 140px) {
+    section.dashboard-block__message-board {
+      height: 320vh; } }
+  @media screen and (max-width: 1098px) {
+    section.dashboard-block__message-board {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      height: 100% !important; } }
 
 div.dashboard-block__message-board-inner {
   border: 1px solid #E6E6E6;
@@ -428,6 +438,10 @@ div.dashboard-block__message-board-inner {
   width: 48%; }
   div.dashboard-block__message-board-inner:nth-child(odd) {
     margin-right: 2em; }
+  @media screen and (max-width: 1098px) {
+    div.dashboard-block__message-board-inner {
+      width: 100%;
+      margin-right: 0px !important; } }
 
 div.dashboard-block-header-container {
   padding: 1.5em;
@@ -508,7 +522,7 @@ div.dashboard-block__message-board-post-comment-input {
   display: flex;
   margin-top: .3em;
   margin-bottom: 50px; }
-  div.dashboard-block__message-board-post-comment-input textarea {
+  div.dashboard-block__message-board-post-comment-input input {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
