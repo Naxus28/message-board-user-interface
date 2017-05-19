@@ -211,6 +211,12 @@ div.header-wrapper__user {
   -ms-flex-align: center;
   align-items: center; }
 
+div.header-wrapper__alerts-icon i {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  div.header-wrapper__alerts-icon i:hover {
+    color: #2A2D33; }
+
 div.header-wrapper__user-name {
   margin-right: 10px; }
   div.header-wrapper__user-name span {
@@ -380,7 +386,7 @@ div.dashboard-block__message-board-msg-controls-post-area button {
   margin-left: 1em;
   padding: 1em 1.5em;
   background: #F7F7F7;
-  font-weight: 500;
+  font-weight: 600;
   border: 1px solid #E6E6E6;
   -webkit-transition: all .3s ease;
   transition: all .3s ease; }
@@ -508,9 +514,62 @@ div.dashboard-block__message-board-post-comment-input {
  * SIDEBAR
  */
 sidebar.sidebar-block {
-  -webkit-box-flex: .33;
-  -ms-flex: .33;
-  flex: .33;
+  -webkit-box-flex: .28;
+  -ms-flex: .28;
+  flex: .28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
   background: #EDEDED; }
+  sidebar.sidebar-block div {
+    margin-top: .6em; }
+    sidebar.sidebar-block div h3, sidebar.sidebar-block div i {
+      color: #A4A5A6; }
+    sidebar.sidebar-block div h3 {
+      padding-bottom: .5em;
+      margin-top: 1em;
+      font-size: .7em;
+      font-weight: 600;
+      border-bottom: 1px solid #D8D8D8; }
+    sidebar.sidebar-block div i {
+      font-size: 1.3em; }
+    sidebar.sidebar-block div span {
+      font-size: .8em;
+      font-weight: 600; }
+
+div.sidebar-block__following img,
+div.sidebar-block__followers img {
+  width: 35px; }
+
+div.sidebar-block__recent-items {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  div.sidebar-block__recent-items div {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    div.sidebar-block__recent-items div i {
+      margin-right: .5em; }
+      div.sidebar-block__recent-items div i.fa-phone {
+        margin-right: .8em; }
+
+div.sidebar-block__links a {
+  display: block;
+  margin-top: .8em;
+  color: #2A2D33;
+  text-decoration: none;
+  font-size: .8em;
+  font-weight: 600; }
 
 /*# sourceMappingURL=styles.css.map */
