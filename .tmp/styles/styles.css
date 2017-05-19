@@ -514,6 +514,19 @@ div.dashboard-block__message-board-post-comment-input {
  * SIDEBAR
  */
 sidebar.sidebar-block {
+  -webkit-box-flex: .33;
+  -ms-flex: .33;
+  flex: .33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #EDEDED; }
+
+div.sidebar-block__inner {
   -webkit-box-flex: .28;
   -ms-flex: .28;
   flex: .28;
@@ -525,32 +538,43 @@ sidebar.sidebar-block {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-right: 1.5em;
-  padding-left: 1.5em;
-  background: #EDEDED; }
-  sidebar.sidebar-block div {
+  padding-left: 1.5em; }
+  div.sidebar-block__inner div {
     margin-top: .6em; }
-    sidebar.sidebar-block div h3, sidebar.sidebar-block div i {
+    div.sidebar-block__inner div h3, div.sidebar-block__inner div i {
       color: #A4A5A6; }
-    sidebar.sidebar-block div h3 {
+    div.sidebar-block__inner div h3 {
       padding-bottom: .5em;
       margin-top: 1em;
       font-size: .7em;
       font-weight: 600;
       border-bottom: 1px solid #D8D8D8; }
-    sidebar.sidebar-block div i {
+    div.sidebar-block__inner div i {
       font-size: 1.3em; }
-    sidebar.sidebar-block div span {
+    div.sidebar-block__inner div span {
       font-size: .8em;
       font-weight: 600; }
-    sidebar.sidebar-block div a {
+    div.sidebar-block__inner div a {
       display: block;
       margin-top: .8em;
       color: #2A2D33;
       text-decoration: none;
       font-size: .8em;
       font-weight: 600; }
-      sidebar.sidebar-block div a:hover {
+      div.sidebar-block__inner div a:hover {
         text-decoration: underline; }
+
+div.sidebar-block__top-chevron {
+  padding-bottom: 2.8em; }
+  div.sidebar-block__top-chevron i {
+    padding: 1em .5em;
+    background: #E4E4E4;
+    color: #757677;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    div.sidebar-block__top-chevron i:hover {
+      background: #BDC2CA;
+      color: white; }
 
 div.sidebar-block__following img,
 div.sidebar-block__followers img {

@@ -384,13 +384,19 @@ div.dashboard-block__message-board-post-comment-input {
 /*
  * SIDEBAR
  */
+
 sidebar.sidebar-block {
+  flex: .33;
+  display: flex;
+  flex-direction: column;
+  background: $gallery;
+}
+div.sidebar-block__inner {
   flex: .28;
   display: flex;
   flex-direction: column;
   padding-right: 1.5em;
   padding-left: 1.5em;
-  background: $gallery;
   div {
     margin-top: .6em;
 
@@ -421,6 +427,20 @@ sidebar.sidebar-block {
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+div.sidebar-block__top-chevron {
+  padding-bottom:  2.8em;
+  
+  i {
+    padding: 1em .5em;
+    background: $mercury-dark;
+    color: $rolling-stone;
+    transition: all .3s ease;
+    &:hover {
+      background: $loblolly;
+      color: white;
     }
   }
 }
