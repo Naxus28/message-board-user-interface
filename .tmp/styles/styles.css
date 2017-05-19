@@ -437,7 +437,8 @@ div.dashboard-block__message-board-post-comment-text-and-name {
   margin-left: .5em; }
   div.dashboard-block-header-container__user-data-meta span,
   div.dashboard-block__message-board-post-comment-text-and-name span {
-    display: block; }
+    display: block;
+    margin-bottom: .5em; }
     div.dashboard-block-header-container__user-data-meta span:fist-child,
     div.dashboard-block__message-board-post-comment-text-and-name span:fist-child {
       color: #2A2D33;

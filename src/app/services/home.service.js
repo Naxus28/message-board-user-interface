@@ -18,8 +18,25 @@
       return $http(requestObj);
     }
 
+    function getMessageData(messages, userId) {
+      return _.find(messages, (message) => message.owner.id === userId);
+    }
+
+
+    function mergeMessageDataIntoUserObj(users, messages) {
+      return users.map( (user) => {
+        let msgData = getMessageData(messages, user.id);
+        user['messageData'] = {};
+        Object.assign(user.messageData, msgData);
+        
+        return user;
+      });
+      
+    }
+
     const service = { 
-      fetchData
+      fetchData,
+      mergeMessageDataIntoUserObj
     };
 
     return service; // exposes API

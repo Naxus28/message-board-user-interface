@@ -1,26 +1,26 @@
-<div class="dashboard-block__message-board-inner">
+<div class="dashboard-block__message-board-inner" ng-repeat="user in users">
   <div class="dashboard-block__message-board dashboard-block-header-container">
     <div class="dashboard-block-header-container__user-data flex-block">
       
       <div class="dashboard-block-header-container__user-data-img">
-        <img src="../../assets/thumbnails/user1.jpg" class="user-avatar" alt="user1">
+        <img ng-src="../../assets/thumbnails/{{ user.img }}.jpg" class="user-avatar" alt="{{ user.name }}">
       </div>
       
       <div class="dashboard-block-header-container__user-data-meta">
-        <span>{ Name }</span>
-        <span>{ Post time }</span>
+        <span>{{ user.name }}</span>
+        <span>{{ user.messageData.owner.post_time }}</span>
       </div> 
     </div>
 
     <div class="dashboard-block-header-container__board-text-block">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti. Ipsam minus ad, sequi voluptas excepturi optio consequatur totam dolorum dicta facere.
+        {{ user.messageData.owner.message }}
       </p>
     </div>
   </div> 
 
-  <div class="dashboard-block__message-board-post-img">
-    <img src="../../assets/posts-images/sunset-surf.jpg" alt="sunset">
+  <div class="dashboard-block__message-board-post-img" ng-if="user.messageData.owner.post_img">
+    <img ng-src="../../assets/posts-images/{{ user.messageData.owner.post_img }}.jpg" alt="{{ user.messageData.owner.post_img }}">
   </div>
 
   <div class="dashboard-block__message-board-view-comments">
@@ -30,15 +30,15 @@
   </div>
 
   <div class="dashboard-block__message-board-post-comment flex-block">
-    <div class="dashboard-block__message-board-post-comment-img">
-      <img src="../../assets/thumbnails/user3.jpg" class="user-avatar user-comment" alt="user3">
+    <div class="dashboard-block__message-board-post-comment-img" ng-if="user.messageData.replier.img">
+      <img ng-src="../../assets/thumbnails/{{ user.messageData.replier.img }}.jpg" class="user-avatar user-comment" alt="{{ user.messageData.replier.img }}">
     </div>
     <div class="dashboard-block__message-board-post-comment-text-and-name">
       <span>
-        Name
+        {{ user.messageData.replier.name }}
       </span>
       <span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A totam, facere sunt inventore ut maxime ullam quia, nihil aspernatur, doloribus magnam iure dolore. Animi id fuga, itaque, officiis tempora aut!
+        {{ user.messageData.replier.message }}
       </span>
     </div>
     <div class="dashboard-block__message-board-post-comment-input">

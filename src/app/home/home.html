@@ -161,12 +161,11 @@
              <h3>Your network</h3>
           </div>
         </section>
-        <section class="dashboard-block__message-board flex-block">
-          <dash-main-content-directive users="home.users"></dash-main-content-directive>
-          <dash-main-content-directive users="home.users"></dash-main-content-directive>
-          <dash-main-content-directive users="home.users"></dash-main-content-directive>
-          <dash-main-content-directive users="home.users"></dash-main-content-directive>
-          <dash-main-content-directive users="home.users"></dash-main-content-directive>
+        <section class="dashboard-block__message-board flex-block" 
+                 ng-if="home.users && home.messages">
+          <dash-main-content-directive users="home.users"
+                                       messages="home.messages">
+          </dash-main-content-directive>
         </section>
       </section>
     </article>

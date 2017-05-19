@@ -5,17 +5,24 @@
     .directive('dashMainContentDirective', dashMainContentDirective);
 
   /* @nginject */
-  function dashMainContentDirective () {
+  function dashMainContentDirective (homeService) {
     return {
-      restrict: '',
+      restrict: 'E',
       link: link,
       replace: true,
-      scope: {},
+      scope: {
+        users: '=',
+        messages: '='
+      },
       templateUrl: 'app/directives/dash-main-content/dash-main-content.html'
     };
 
     function link(scope) {
-      console.log(scope);
+      scope.users = homeService.mergeMessageDataIntoUserObj(scope.users, scope.messages);
+
+      console.log('msgs: ', scope.users);
+
     }
+
   }
 })();

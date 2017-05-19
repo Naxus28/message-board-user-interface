@@ -3,41 +3,124 @@
     {
       "owner" : {
         "id": 1,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "img": "user1",
+        "name": "Josh",
+        "post_time": "2 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       },
       "replier": {
         "id" : 2,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Stephanie",
+        "img": "user2",
+        "post_time": "2 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      }
+    },
+    {
+      "owner" : {
+        "id": 2,
+        "name": "Stephanie",
+        "post_time": "3 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      },
+      "replier": {
+        "id" : 3,
+        "name": "Karlyle",
+        "img": "user3",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       }
     },
     {
       "owner" : {
         "id": 3,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Karlyle",
+        "img": "user3",
+        "post_img": "sunset-surf",
+        "post_time": "5 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       },
       "replier": {
         "id" : 4,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Megan",
+        "img": "user4",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      }
+    },
+    {
+      "owner" : {
+        "id": 4,
+        "name": "Megan",
+        "img": "user4",
+        "post_time": "7 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      },
+      "replier": {
+        "id" : 5,
+        "name": "Scott",
+        "img": "user5",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       }
     },
     {
       "owner" : {
         "id": 5,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Scott",
+        "img": "user5",
+        "post_time": "14 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       },
       "replier": {
         "id" : 6,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Diana",
+        "img": "user6",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      }
+    },
+    {
+      "owner" : {
+        "id": 6,
+        "name": "Diana",
+        "img": "user6",
+        "post_img": "mountain",
+        "post_time": "21 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      },
+      "replier": {
+        "id" : 7,
+        "name": "Jennifer",
+        "img": "user7",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       }
     },
     {
       "owner" : {
         "id": 7,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Jennifer",
+        "img": "user7",
+        "post_time": "13 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       },
       "replier": {
         "id" : 8,
-        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+        "name": "Adam",
+        "img": "user8",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      }
+    },
+    {
+      "owner" : {
+        "id": 8,
+        "img": "user8",
+        "name": "Adam",
+        "post_time": "12 hours ago",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      },
+      "replier": {
+        "id" : 1,
+        "name": "Josh",
+        "img": "user1",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       }
     }
   ]
+}
