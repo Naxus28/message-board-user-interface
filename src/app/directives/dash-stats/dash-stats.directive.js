@@ -11,16 +11,14 @@
       link: link,
       replace: true,
       scope: {
-        category: '=',
-        faIconClass: '@',
-        date: '@',
-        stats: '='
+        dashStats: '='
       },
       templateUrl: 'app/directives/dash-stats/dash-stats.html'
     };
 
-    function link() {
-
+    function link(scope) {
+      console.log('scope: ', scope);
+      scope.stats = scope.dashStats;
     }
   }
 })();

@@ -135,9 +135,6 @@ nav.vertical-nav > div h3 {
   padding: 1.4em 2em .8em;
   border-bottom: 1px solid $mid-gray;
   color: $mid-gray;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: .8em;
 }
 div.vertical-nav__main-items  {
   padding-top: 0px!important;
@@ -197,7 +194,7 @@ section.dashboard-block__stats-components {
 }
 div.dashboard-block__stats-component {
   flex: 1; 
-  padding: 6em 4em;
+  padding: 2em;
   background: white;
   &:not(:last-child) {
     border-right: 1px solid $alabaster;
@@ -209,6 +206,36 @@ sidebar.sidebar-block {
   flex: .33;
   background: $gallery;
 }
+div.dashboard-block__stats-component {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+div.dashboard-block__stats-components-cat-time {
+  h3 {
+    font-size: .35em;
+    font-weight: bold;
+  }
+  span {
+    font-size: .6em;
+    font-weight: bold;
+    color: $ghost;
+  }
+}
+div.dashboard-block__stats-component-icon {
+  margin-right: 5px;
+  i {
+    padding: .2em .25em;
+    outline: 1px solid $alabaster;
+  }
+}
+div.dashboard-block__stats-components-number {
+  span {
+    font-size: 4em;
+    font-weight: 300;
+  }
+}
+
+
 
 
 

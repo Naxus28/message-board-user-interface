@@ -1,0 +1,14 @@
+<div class="dashboard-block__stats-component flex-block" ng-repeat="stat in stats">
+  <div class="dashboard-block__stats-component-icon">
+    <i class="fa fa-{{ stat.faIconClass }}" aria-hidden="true"></i>
+  </div>
+  <div class="dashboard-block__stats-components-cat-time">
+    <h3>{{ stat.category }}</h3>
+    <span>{{ stat.time }}</span>
+  </div>
+  <div class="dashboard-block__stats-components-number">
+    <span>
+      {{ stat.number }}
+    </span>
+  </div>
+</div>
