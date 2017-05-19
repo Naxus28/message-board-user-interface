@@ -542,6 +542,15 @@ sidebar.sidebar-block {
     sidebar.sidebar-block div span {
       font-size: .8em;
       font-weight: 600; }
+    sidebar.sidebar-block div a {
+      display: block;
+      margin-top: .8em;
+      color: #2A2D33;
+      text-decoration: none;
+      font-size: .8em;
+      font-weight: 600; }
+      sidebar.sidebar-block div a:hover {
+        text-decoration: underline; }
 
 div.sidebar-block__following img,
 div.sidebar-block__followers img {
@@ -563,13 +572,5 @@ div.sidebar-block__recent-items {
       margin-right: .5em; }
       div.sidebar-block__recent-items div i.fa-phone {
         margin-right: .8em; }
-
-div.sidebar-block__links a {
-  display: block;
-  margin-top: .8em;
-  color: #2A2D33;
-  text-decoration: none;
-  font-size: .8em;
-  font-weight: 600; }
 
 /*# sourceMappingURL=styles.css.map */

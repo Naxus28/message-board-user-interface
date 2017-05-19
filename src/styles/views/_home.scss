@@ -411,6 +411,17 @@ sidebar.sidebar-block {
       font-size: .8em;
       font-weight: 600;
     }
+    a {
+      display: block;
+      margin-top: .8em;
+      color: $shark;
+      text-decoration: none;
+      font-size: .8em;
+      font-weight: 600;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 div.sidebar-block__following,
@@ -435,17 +446,6 @@ div.sidebar-block__recent-items {
     }
   }
 }
-div.sidebar-block__links {
-  a {
-    display: block;
-    margin-top: .8em;
-    color: $shark;
-    text-decoration: none;
-    font-size: .8em;
-    font-weight: 600;
-  }
-}
-
 
 
 
