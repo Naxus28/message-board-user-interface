@@ -27,6 +27,7 @@ h3, .h3{
 img.user-avatar {
   border-radius: 50%;
   width: 55px;
+  &.small {}
   &.user-comment{
     width: 45px;
   }

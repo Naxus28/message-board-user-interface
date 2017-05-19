@@ -398,16 +398,42 @@ div.dashboard-block__message-board-post-comment-input {
   width: 100%;
   display: flex;
   margin-top: .3em;
-  margin-bottom: 50px;
+  margin-bottom: .5em;
+  div {
+    &:last-child {
+      flex: 1;
+    }
+    textarea {
+      width: 100%;
+      margin-left: .5em;
+      padding-left: 1em;
+      padding-top: .8em;
+      resize: none;
+      height: 35px;
+      border: 1px solid $silver;
+      font-weight: 500;
+    }
+  }
+  
+}
+div.dashboard-block__message-board-post-comment-buttons {
+  margin-bottom: 2em;
+  padding-left: 3.5em;
+  padding-right: 1em;
+  button {
+    padding: .8em 1em;
+    background: none;
+    margin-right: .5em;
+    border-radius: 2px;
+    &:first-child {
+      color: $cornflower-blue;
+      border: 1px solid $cornflower-blue;
+    }
+    &:last-child {
+      color: $oslo-gray;
+      border: 1px solid $oslo-gray;
+    }
 
-  textarea {
-    flex: 1;
-    padding-left: 1em;
-    padding-top: .8em;
-    resize: none;
-    height: 35px;
-    border: 1px solid $silver;
-    font-weight: 500;
   }
 }
 

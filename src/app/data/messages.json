@@ -20,6 +20,7 @@
     {
       "owner" : {
         "id": 2,
+        "img": "user2",
         "name": "Stephanie",
         "post_time": "3 hours ago",
         "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."

@@ -521,17 +521,36 @@ div.dashboard-block__message-board-post-comment-input {
   display: -ms-flexbox;
   display: flex;
   margin-top: .3em;
-  margin-bottom: 50px; }
-  div.dashboard-block__message-board-post-comment-input textarea {
+  margin-bottom: .5em; }
+  div.dashboard-block__message-board-post-comment-input div:last-child {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1;
+    flex: 1; }
+  div.dashboard-block__message-board-post-comment-input div textarea {
+    width: 100%;
+    margin-left: .5em;
     padding-left: 1em;
     padding-top: .8em;
     resize: none;
     height: 35px;
     border: 1px solid #C2C2C2;
     font-weight: 500; }
+
+div.dashboard-block__message-board-post-comment-buttons {
+  margin-bottom: 2em;
+  padding-left: 3.5em;
+  padding-right: 1em; }
+  div.dashboard-block__message-board-post-comment-buttons button {
+    padding: .8em 1em;
+    background: none;
+    margin-right: .5em;
+    border-radius: 2px; }
+    div.dashboard-block__message-board-post-comment-buttons button:first-child {
+      color: #6195ED;
+      border: 1px solid #6195ED; }
+    div.dashboard-block__message-board-post-comment-buttons button:last-child {
+      color: #858688;
+      border: 1px solid #858688; }
 
 /*
  * SIDEBAR

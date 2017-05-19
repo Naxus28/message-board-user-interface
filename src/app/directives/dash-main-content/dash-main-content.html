@@ -42,11 +42,21 @@
       </span>
     </div>
     <div class="dashboard-block__message-board-post-comment-input">
-      <textarea type="text" 
-                ng-style="{ height: focused ? '100px' : '35px'}"
-                placeholder="Add your comment..."
-                ng-focus="focused=true"
-                ng-blur="focused=false"></textarea>
+      <div>
+        <img ng-src="../../assets/thumbnails/{{ user.messageData.owner.img }}.jpg" class="user-avatar user-reply" alt="{{ user.messageData.owner.name }}">
+      </div>
+      <div>
+        <textarea type="text" 
+                  ng-style="{ height: focused ? '100px' : '35px'}"
+                  placeholder="Add your comment..."
+                  ng-focus="focused=true"
+                  ng-blur="focused=false"></textarea>
+      </div>
+      
+    </div>
+    <div class="dashboard-block__message-board-post-comment-buttons" ng-if="focused">
+      <button>Post Comment</button>
+      <button>Cancel</button>
     </div>
   </div>
 </div>
