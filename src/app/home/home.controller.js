@@ -29,12 +29,9 @@
 
       homeService.fetchData('app/data/messages.json')
       .then(
-        res => {
-          vm.messages = res.data.messages;
-        },
+        res => vm.messages = res.data.messages,
         err => $log('Error: ', err)
       );
-
     })();
   }
 })();

@@ -400,9 +400,11 @@ div.dashboard-block__message-board-post-comment-input {
   margin-top: .3em;
   margin-bottom: 50px;
 
-  input {
+  textarea {
     flex: 1;
     padding-left: 1em;
+    padding-top: .8em;
+    resize: none;
     height: 35px;
     border: 1px solid $silver;
     font-weight: 500;

@@ -42,7 +42,14 @@
       </span>
     </div>
     <div class="dashboard-block__message-board-post-comment-input">
-      <input type="text" placeholder="Add your comment...">
+      <textarea type="text" 
+                ng-style="{ height: focused ? '100px' : '35px'}"
+                placeholder="Add your comment..."
+                ng-focus="focused=true"
+                ng-blur="focused=false"></textarea>
     </div>
   </div>
 </div>
+
+
+
