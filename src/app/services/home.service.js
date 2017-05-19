@@ -18,10 +18,13 @@
       return $http(requestObj);
     }
 
+    function getContacts(users, contactsIds) {
+      return users.filter( (user) => _.find(contactsIds, (id) => id === user.id));
+    }
+    
     function getMessageData(messages, userId) {
       return _.find(messages, (message) => message.owner.id === userId);
     }
-
 
     function mergeMessageDataIntoUserObj(users, messages) {
       return users.map( (user) => {
@@ -31,11 +34,11 @@
         
         return user;
       });
-      
     }
 
     const service = { 
       fetchData,
+      getContacts,
       mergeMessageDataIntoUserObj
     };
 

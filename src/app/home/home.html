@@ -176,13 +176,13 @@
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </div>
       <div class="sidebar-block__inner">
-        <div class="sidebar-block__following">
+        <div class="sidebar-block__following" ng-if="home.following">
           <h3>Following</h3>
-          <sidebar-contacts-directive contacts="home.users.network.followers"></sidebar-contacts-directive>
+          <sidebar-contacts-directive contacts="home.following"></sidebar-contacts-directive>
         </div>
-        <div class="sidebar-block__followers">
+        <div class="sidebar-block__followers" ng-if="home.followers">
           <h3>Followers</h3>
-          <sidebar-contacts-directive contacts="home.users.network.followers"></sidebar-contacts-directive>
+          <sidebar-contacts-directive contacts="home.followers"></sidebar-contacts-directive>
         </div>
         <div class="sidebar-block__recent-items flex-block">
           <h3>Recent Items</h3>

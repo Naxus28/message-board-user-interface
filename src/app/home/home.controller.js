@@ -18,7 +18,12 @@
       
       homeService.fetchData('app/data/users.json')
       .then(
-        res => vm.users = res.data.users,
+        res => {
+          vm.users = res.data.users;
+          let thisUser = _.find(res.data.users, (user) => user.id === 1); // mocks a user login
+          vm.followers = homeService.getContacts(vm.users, thisUser.network.followerIds);
+          vm.following = _.reverse(homeService.getContacts(vm.users, thisUser.network.followingIds));
+        },
         err => $log('Error: ', err)
       );
 
