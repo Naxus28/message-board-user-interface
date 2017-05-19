@@ -423,7 +423,7 @@ section.dashboard-block__message-board {
   height: 590vh; }
   @media screen and (min-width: 140px) {
     section.dashboard-block__message-board {
-      height: 320vh; } }
+      height: 380vh; } }
   @media screen and (max-width: 1098px) {
     section.dashboard-block__message-board {
       -webkit-box-orient: horizontal;
