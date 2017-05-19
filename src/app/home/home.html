@@ -150,13 +150,31 @@
         <dash-stats-directive dash-stats="home.dashStats"></dash-stats-directive>
       </section>
       
-      <section class="dashboard-block__message-board flex-block">
-        <dash-main-content-directive></dash-main-content-directive>
-        <dash-main-content-directive></dash-main-content-directive>
-        <dash-main-content-directive></dash-main-content-directive>
-        <dash-main-content-directive></dash-main-content-directive>
-        <dash-main-content-directive></dash-main-content-directive>
+      <section class="dashboard-block__message-board-wrapper">
+        <section class="dashboard-block__message-board-msg-controls flex-block">
+          <div class="dashboard-block__message-board-msg-controls-title">
+            <h3>Corporate message board</h3>
+          </div>
+          <div class="dashboard-block__message-board-msg-controls-button">
+            <button>Post messages</button>
+          </div>
+          <div class="dashboard-block__message-board-msg-controls-gear">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+          </div>
+          <div class="dashboard-block__message-board-msg-controls-network">
+            <span>Your network</span>
+          </div>
+        </section>
+        <section class="dashboard-block__message-board flex-block">
+          <dash-main-content-directive></dash-main-content-directive>
+          <dash-main-content-directive></dash-main-content-directive>
+          <dash-main-content-directive></dash-main-content-directive>
+          <dash-main-content-directive></dash-main-content-directive>
+          <dash-main-content-directive></dash-main-content-directive>
+        </section>
       </section>
+      
+
     </article>
     
     <!-- sidebar -->

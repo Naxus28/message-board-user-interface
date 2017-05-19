@@ -5,8 +5,8 @@ header.header-wrapper {
   background: white;
 }
 div.header-wrapper__logo {
-  padding-left: 1.5em!important;
-  padding-right: 1.5em!important;
+  padding-left: 1.45em!important;
+  padding-right: 1.45em!important;
   align-items: center;
   background: $puerto-rico;
   color: white;
@@ -118,7 +118,6 @@ nav.vertical-nav {
   background: $shark; 
   color: $spun-pearl;
   flex-direction: column;
-  align-items: stretch;
 }
 nav.vertical-nav > div {
   padding-top: .7em;
@@ -226,16 +225,28 @@ div.dashboard-block__component-number {
   }
 }
 
-section.dashboard-block__message-board {
+section.dashboard-block__message-board-wrapper {
   padding-left: 3em;
   padding-right: 3em;
   padding-top: 2em;
+}
+section.dashboard-block__message-board-msg-controls {
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+section.dashboard-block__message-board-msg-controls div {
+  flex-basis: 1;
+}
+div.dashboard-block__message-board-msg-controls-title {
+  flex-shrink: .5!important;
+}
+section.dashboard-block__message-board {
   flex-wrap: wrap;
   justify-content: space-between;
 }
 div.dashboard-block__message-board-inner {
   border: 1px solid $mercury;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   flex-basis: 48%;
 }
 div.dashboard-block-header-container {
@@ -295,12 +306,13 @@ div.dashboard-block__message-board-post-comment {
 div.dashboard-block__message-board-post-comment-img {
   padding: 1em .5em 1em 1em; 
   flex: 3%!important;
+  align-self: flex-start;
 }
 div.dashboard-block__message-board-post-comment-text-and-name {
   padding-top: 1em; 
   padding-bottom: 1em; 
   padding-right: .8em; 
-  flex: 89%!important;
+  flex: 80%!important;
 
   span:first-child {
     font-size: .8em;

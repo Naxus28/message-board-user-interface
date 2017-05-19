@@ -92,8 +92,8 @@ header.header-wrapper {
   background: white; }
 
 div.header-wrapper__logo {
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
+  padding-left: 1.45em !important;
+  padding-right: 1.45em !important;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -226,10 +226,7 @@ nav.vertical-nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
+  flex-direction: column; }
 
 nav.vertical-nav > div {
   padding-top: .7em; }
@@ -345,10 +342,26 @@ div.dashboard-block__component-number span {
   font-size: 3.5em;
   font-weight: 300; }
 
-section.dashboard-block__message-board {
+section.dashboard-block__message-board-wrapper {
   padding-left: 3em;
   padding-right: 3em;
-  padding-top: 2em;
+  padding-top: 2em; }
+
+section.dashboard-block__message-board-msg-controls {
+  margin-bottom: 1em;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+section.dashboard-block__message-board-msg-controls div {
+  -ms-flex-preferred-size: 1;
+  flex-basis: 1; }
+
+div.dashboard-block__message-board-msg-controls-title {
+  -ms-flex-negative: 0.5 !important;
+  flex-shrink: 0.5 !important; }
+
+section.dashboard-block__message-board {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -357,7 +370,7 @@ section.dashboard-block__message-board {
 
 div.dashboard-block__message-board-inner {
   border: 1px solid #E6E6E6;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   -ms-flex-preferred-size: 48%;
   flex-basis: 48%; }
 
@@ -417,15 +430,17 @@ div.dashboard-block__message-board-post-comment-img {
   padding: 1em .5em 1em 1em;
   -webkit-box-flex: 3% !important;
   -ms-flex: 3% !important;
-  flex: 3% !important; }
+  flex: 3% !important;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
 
 div.dashboard-block__message-board-post-comment-text-and-name {
   padding-top: 1em;
   padding-bottom: 1em;
   padding-right: .8em;
-  -webkit-box-flex: 89% !important;
-  -ms-flex: 89% !important;
-  flex: 89% !important; }
+  -webkit-box-flex: 80% !important;
+  -ms-flex: 80% !important;
+  flex: 80% !important; }
   div.dashboard-block__message-board-post-comment-text-and-name span:first-child {
     font-size: .8em;
     font-weight: 600; }
