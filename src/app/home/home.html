@@ -39,7 +39,7 @@
           <span>Stephanie</span>
         </div>
         <div class="header-wrapper__user-img">
-          <img src="../../assets/thumbnails/user2.jpg" alt="stephanie">
+          <img src="../../assets/thumbnails/user2.jpg" class="user-avatar" alt="stephanie">
         </div>
       </div>
     </div>
@@ -135,8 +135,38 @@
 
     <article class="dashboard-block">
       <h2>Dashboard</h2>
+      
       <section class="dashboard-block__stats-components flex-block">
         <dash-stats-directive dash-stats="home.dashStats"></dash-stats-directive>
+      </section>
+      
+      <section class="dashboard-block__message-board">
+        
+        <div class="dashboard-block__message-board dashboard-block-header-container flex-block">
+          <div class="dashboard-block-header-container__user-data flex-block">
+            
+            <div class="dashboard-block-header-container__user-data-img">
+              <img src="../../assets/thumbnails/user1.jpg" class="user-avatar" alt="user1"> 
+            </div>
+            
+            <div class="dashboard-block-header-container__user-data-meta">
+              <span>Name</span>
+              <span>Post time</span>
+            </div> 
+          </div>
+
+          <div class="dashboard-block-header-container__board-text-block">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti. Ipsam minus ad, sequi voluptas excepturi optio consequatur totam dolorum dicta facere.
+            </p>
+          </div>
+          
+        </div> 
+
+        <div class="dashboard-block__message-board-post-img">
+          <img src="../../assets/posts-images/sunset-surf.jpg" alt="sunset">
+        </div>
+
       </section>
     </article>
 

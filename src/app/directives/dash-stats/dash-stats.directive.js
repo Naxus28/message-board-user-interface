@@ -17,7 +17,6 @@
     };
 
     function link(scope) {
-      console.log('scope: ', scope);
       scope.stats = scope.dashStats;
     }
   }

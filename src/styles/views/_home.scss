@@ -106,13 +106,6 @@ div.header-wrapper__user-name {
     font-weight: 600;
   }
 }
-div.header-wrapper__user-img {
-  img {
-    border-radius: 50%;
-    width: 55px;
-  }
-}
-
 .flex-block {
   display: flex;
 }
@@ -190,27 +183,18 @@ article.dashboard-block h2 {
 }
 section.dashboard-block__stats-components {
   justify-content: space-bewteen;
-  align-items: stretch;
 }
-div.dashboard-block__stats-component {
+div.dashboard-block__component {
   flex: 1; 
-  padding: 2em;
+  padding: 2em 1.4em;
   background: white;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   &:not(:last-child) {
     border-right: 1px solid $alabaster;
   }
 }
-
-//sidebar
-sidebar.sidebar-block {
-  flex: .33;
-  background: $gallery;
-}
-div.dashboard-block__stats-component {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-div.dashboard-block__stats-components-cat-time {
+div.dashboard-block__component-cat-time {
   h3 {
     font-size: .35em;
     font-weight: bold;
@@ -221,19 +205,59 @@ div.dashboard-block__stats-components-cat-time {
     color: $ghost;
   }
 }
-div.dashboard-block__stats-component-icon {
+div.dashboard-block__component-icon {
   margin-right: 5px;
   i {
     padding: .2em .25em;
     outline: 1px solid $alabaster;
   }
 }
-div.dashboard-block__stats-components-number {
+div.dashboard-block__component-number {
   span {
     font-size: 4em;
     font-weight: 300;
   }
 }
+
+section.dashboard-block__message-board {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+div.dashboard-block-header-container {
+  padding: 1.5em;
+  background: white;
+  border: 1px solid $mercury;
+}
+div.dashboard-block-header-container__user-data {
+
+}
+div.dashboard-block-header-container__user-data-img {
+}
+div.dashboard-block-header-container__user-data-meta {
+  span {
+    display: block;
+  }
+}
+div.dashboard-block-header-container__board-text-block {
+  p {
+    font-size: .9em;
+    color: $oslo-gray;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+}
+div.dashboard-block__message-board-post-img {
+  img {
+    width: 100%;
+  };
+}
+
+//sidebar
+sidebar.sidebar-block {
+  flex: .33;
+  background: $gallery;
+}
+
 
 
 

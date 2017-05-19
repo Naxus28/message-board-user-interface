@@ -4,7 +4,7 @@
     .module('services')
     .factory('homeService', homeService);
 
-  function homeService($http) {
+  function homeService() {
     const dashStats = [
       {
         category: 'New Clients',
@@ -16,7 +16,7 @@
         category: 'New Work Orders',
         time: 'Last 24 hours',
         number: 13,
-        faIconClass: 'marker'
+        faIconClass: 'map-marker'
       },
       {
         category: 'New Quotes',

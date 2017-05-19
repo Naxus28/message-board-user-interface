@@ -8,6 +8,5 @@
   function HomeCtrl(homeService) {
     let vm = this;
     vm.dashStats = homeService.getDashStats();
-    console.log(vm.dashStats);
   }
 })();
