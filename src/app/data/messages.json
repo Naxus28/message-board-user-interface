@@ -1,0 +1,43 @@
+{
+  "messages": [
+    {
+      "owner" : {
+        "id": 1,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      },
+      "replier": {
+        "id" : 2,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      }
+    },
+    {
+      "owner" : {
+        "id": 3,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      },
+      "replier": {
+        "id" : 4,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      }
+    },
+    {
+      "owner" : {
+        "id": 5,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      },
+      "replier": {
+        "id" : 6,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      }
+    },
+    {
+      "owner" : {
+        "id": 7,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      },
+      "replier": {
+        "id" : 8,
+        "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti."
+      }
+    }
+  ]

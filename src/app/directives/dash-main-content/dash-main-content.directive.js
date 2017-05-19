@@ -14,8 +14,8 @@
       templateUrl: 'app/directives/dash-main-content/dash-main-content.html'
     };
 
-    function link() {
-
+    function link(scope) {
+      console.log(scope);
     }
   }
 })();
