@@ -85,6 +85,11 @@ img.user-avatar {
   img.user-avatar.user-reply {
     width: 35px; }
 
+.flex-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*
  * HEADER
  */
@@ -212,11 +217,6 @@ div.header-wrapper__user-name {
     font-size: .9em;
     font-weight: 600; }
 
-.flex-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 /*
  * NAV
  */
@@ -293,7 +293,7 @@ li.vertical-nav__list-item {
     color: #5B5E66; }
 
 /*
- * DASH
+ * DASH STATS COMPONENTS
  */
 article.dashboard-block {
   -webkit-box-flex: 1;
@@ -313,7 +313,7 @@ div.dashboard-block__component {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 2em 1.4em;
+  padding: 2.5em 3%;
   background: white;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -342,6 +342,9 @@ div.dashboard-block__component-number span {
   font-size: 3.5em;
   font-weight: 300; }
 
+/*
+ * DASH MESSAGE BOARD
+ */
 section.dashboard-block__message-board-wrapper {
   padding-left: 3em;
   padding-right: 3em;
@@ -354,12 +357,47 @@ section.dashboard-block__message-board-msg-controls {
   justify-content: space-between; }
 
 section.dashboard-block__message-board-msg-controls div {
-  -ms-flex-preferred-size: 1;
-  flex-basis: 1; }
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%; }
 
-div.dashboard-block__message-board-msg-controls-title {
-  -ms-flex-negative: 0.5 !important;
-  flex-shrink: 0.5 !important; }
+div.dashboard-block__message-board-msg-controls-post-area,
+div.dashboard-block__message-board-msg-gear-area {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: none; }
+  div.dashboard-block__message-board-msg-controls-post-area h3,
+  div.dashboard-block__message-board-msg-gear-area h3 {
+    text-transform: none; }
+
+div.dashboard-block__message-board-msg-controls-post-area h3 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+div.dashboard-block__message-board-msg-controls-post-area button {
+  margin-right: 1em;
+  margin-left: 1em;
+  padding: 1em 1.5em;
+  background: #F7F7F7;
+  font-weight: 500;
+  border: 1px solid #E6E6E6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  div.dashboard-block__message-board-msg-controls-post-area button:hover {
+    background: #BDC2CA;
+    color: white; }
+
+div.dashboard-block__message-board-msg-controls-post-area i {
+  font-size: 1.3em;
+  padding: .35em;
+  background: #F7F7F7;
+  border: 1px solid #E6E6E6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  div.dashboard-block__message-board-msg-controls-post-area i:hover {
+    background: #BDC2CA;
+    color: white; }
 
 section.dashboard-block__message-board {
   -ms-flex-wrap: wrap;

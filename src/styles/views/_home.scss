@@ -106,10 +106,6 @@ div.header-wrapper__user-name {
     font-weight: 600;
   }
 }
-.flex-block {
-  display: flex;
-}
-
 
 /*
  * NAV
@@ -178,7 +174,7 @@ li.vertical-nav__list-item {
 }
 
 /*
- * DASH
+ * DASH STATS COMPONENTS
  */
 article.dashboard-block {
   flex: 1;
@@ -192,7 +188,7 @@ section.dashboard-block__stats-components {
 }
 div.dashboard-block__component {
   flex: 1; 
-  padding: 2em 1.4em;
+  padding: 2.5em 3%;
   background: white;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -225,6 +221,9 @@ div.dashboard-block__component-number {
   }
 }
 
+/*
+ * DASH MESSAGE BOARD
+ */
 section.dashboard-block__message-board-wrapper {
   padding-left: 3em;
   padding-right: 3em;
@@ -235,10 +234,44 @@ section.dashboard-block__message-board-msg-controls {
   justify-content: space-between;
 }
 section.dashboard-block__message-board-msg-controls div {
-  flex-basis: 1;
+  flex-basis: 48%;
 }
-div.dashboard-block__message-board-msg-controls-title {
-  flex-shrink: .5!important;
+div.dashboard-block__message-board-msg-controls-post-area,
+div.dashboard-block__message-board-msg-gear-area {
+  align-items: center;
+  text-transform: none;
+  h3 {
+    text-transform: none;
+  }
+}
+div.dashboard-block__message-board-msg-controls-post-area {
+  h3 {
+    flex: 1;
+  }
+  button {
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 1em 1.5em;
+    background: $alabaster;
+    font-weight: 500;
+    border: 1px solid $mercury;
+    transition: all .3s ease;
+    &:hover {
+      background: $loblolly;
+      color: white;
+    }
+  }
+  i {
+    font-size: 1.3em;
+    padding: .35em;
+    background: $alabaster;
+    border: 1px solid $mercury;
+    transition: all .3s ease;
+    &:hover {
+      background: $loblolly;
+      color: white;
+    }
+  }
 }
 section.dashboard-block__message-board {
   flex-wrap: wrap;
