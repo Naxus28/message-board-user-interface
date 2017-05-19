@@ -221,7 +221,7 @@ div.dashboard-block__component-icon {
 }
 div.dashboard-block__component-number {
   span {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 300;
   }
 }
@@ -230,10 +230,13 @@ section.dashboard-block__message-board {
   padding-left: 3em;
   padding-right: 3em;
   padding-top: 2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 div.dashboard-block__message-board-inner {
   border: 1px solid $mercury;
   margin-bottom: 3em;
+  flex-basis: 48%;
 }
 div.dashboard-block-header-container {
   padding: 1.5em;

@@ -342,17 +342,24 @@ div.dashboard-block__component-icon {
     outline: 1px solid #F7F7F7; }
 
 div.dashboard-block__component-number span {
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 300; }
 
 section.dashboard-block__message-board {
   padding-left: 3em;
   padding-right: 3em;
-  padding-top: 2em; }
+  padding-top: 2em;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 div.dashboard-block__message-board-inner {
   border: 1px solid #E6E6E6;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%; }
 
 div.dashboard-block-header-container {
   padding: 1.5em;
