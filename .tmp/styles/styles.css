@@ -80,6 +80,10 @@ h3, .h3 {
 img.user-avatar {
   border-radius: 50%;
   width: 55px; }
+  img.user-avatar.user-comment {
+    width: 45px; }
+  img.user-avatar.user-reply {
+    width: 35px; }
 
 /*
  * HEADER
@@ -219,7 +223,13 @@ div.header-wrapper__user-name {
 nav.vertical-nav {
   background: #2A2D33;
   color: #A6A6A9;
-  height: 100%; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
 
 nav.vertical-nav > div {
   padding-top: .7em; }
@@ -228,6 +238,16 @@ nav.vertical-nav > div h3 {
   padding: 1.4em 2em .8em;
   border-bottom: 1px solid #5B5E66;
   color: #5B5E66; }
+
+div.vertical-nav__settings-items {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+div.vertical-nav-bottom {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 div.vertical-nav__main-items {
   padding-top: 0px !important; }
@@ -322,7 +342,7 @@ div.dashboard-block__component-number span {
   font-size: 4em;
   font-weight: 300; }
 
-section.dashboard-block__message-board {
+div.dashboard-block__message-board {
   padding-left: 3em;
   padding-right: 3em; }
 
@@ -331,8 +351,24 @@ div.dashboard-block-header-container {
   background: white;
   border: 1px solid #E6E6E6; }
 
-div.dashboard-block-header-container__user-data-meta span {
-  display: block; }
+div.dashboard-block-header-container__user-data {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: .7em; }
+
+div.dashboard-block-header-container__user-data-meta {
+  margin-left: .5em; }
+  div.dashboard-block-header-container__user-data-meta span {
+    display: block; }
+    div.dashboard-block-header-container__user-data-meta span:fist-child {
+      color: #2A2D33;
+      font-weight: 600;
+      font-size: .8em; }
+    div.dashboard-block-header-container__user-data-meta span:nth-child(2) {
+      color: #C2C2C2;
+      font-weight: 600;
+      font-size: .8em; }
 
 div.dashboard-block-header-container__board-text-block p {
   font-size: .9em;
@@ -342,6 +378,17 @@ div.dashboard-block-header-container__board-text-block p {
 
 div.dashboard-block__message-board-post-img img {
   width: 100%; }
+
+div.dashboard-block__message-board-view-comments span {
+  display: block;
+  padding: 1em 1.8em;
+  color: #2A2D33;
+  font-weight: 600;
+  font-size: .8em;
+  border-bottom: 1px solid white; }
+
+div.dashboard-block__message-board-post-comment-img {
+  padding: 1em 1.5em; }
 
 sidebar.sidebar-block {
   -webkit-box-flex: .33;

@@ -5,90 +5,32 @@
 html, body{
   height: 100%;
   min-height: 100%;
-  // background: $serenade; 
   @include font-smoothing();
 }
 body {
   font-size: 100%;
-  // color: $tundora;
   font-family: $open-sans; 
   font-weight: 300; 
 }
 h1, .h1 {
-  // padding: 10px;
-  // text-align: center;
-  // text-transform: uppercase;
-  // font-size: 2.2em; 
-  // font-weight: 500;
-  // color: white;
 }
 h2, .h2 {
   color: $shark;
-  // margin-top: 30px;
-  // margin-bottom: 30px; 
-  // text-align: center;
   font-size: 2em;
   font-weight: 500;
-  // line-height: 30px;
 }
 h3, .h3{
   font-weight: 600;
   font-size: .8em;
   text-transform: uppercase;
-  // margin-top: 15px;
-  // margin-bottom: 15px; 
-  // text-align: center;
-  // font-size: 1.2em;
-  // font-weight: 500;
-  // line-height: 26px;
-}
-p {
-  // font-size: 1.2em;
-  // line-height: 26px;
-}
-a {
-  // color: $fountain-blue;
-  // transition: color .3s ease;
-  // text-decoration: none;
-  // cursor: default;
-  // &:hover {
-  //   color: $bondi-blue;
-  // }
 }
 img.user-avatar {
   border-radius: 50%;
   width: 55px;
-}
-header{
-  // width: 100%; 
-  // padding: 10px 0px;
-  // background: $scorpion;
-}
-
-div.site-wrapper {
-  // min-height: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // padding-top: 0px;
-  // padding-bottom: 0px;
-}
-div.main-body-wrapper {
-  // padding: 20px 40px 40px;
-  // padding-bottom: 40px;
-  // flex: 1;
-}
-div.content {
-
-}
-div.dashboard {
-
-}
-div.message-board-wrapper {
-
-}
-div.message-container {
-
-}
-div.sidebar {
-
+  &.user-comment{
+    width: 45px;
+  }
+  &.user-reply{
+    width: 35px;
+  }
 }

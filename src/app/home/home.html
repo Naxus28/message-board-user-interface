@@ -1,10 +1,13 @@
 <div class="site-wrapper main-body-wrapper">
   <header class="header-wrapper flex-block">
+    
+    <!-- logo -->
     <div class="header-wrapper__logo flex-block">
       <h1>Vonigo</h1>
     </div>
 
     <div class="header-wrapper__functionality flex-block">
+      <!-- search input -->
       <div class="header-wrapper__search flex-block">
         <div class="header-wrapper__search-inner flex-block">
           <input type="text" placeholder="Search">
@@ -12,14 +15,16 @@
           <i class="fa fa-search" aria-hidden="true"></i>
         </div>
       </div>
-
+      
+      <!-- button -->
       <div class="header-wrapper__create-new flex-block">
         <button>
           Create New 
           <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </button>
       </div>
-
+      
+      <!-- user alerts -->
       <div class="header-wrapper__alerts flex-block">
         <div class="header-wrapper__alerts-calendar header-wrapper__alerts-icon">
           <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -33,7 +38,8 @@
           <i class="fa fa-th-list" aria-hidden="true"></i>
         </div>
       </div>
-
+      
+      <!-- user -->
       <div class="header-wrapper__user flex-block">
         <div class="header-wrapper__user-name">
           <span>Stephanie</span>
@@ -45,8 +51,11 @@
     </div>
   </header>
   
+  <!-- main body content -->
   <div class="body-content-wrapper flex-block">
-    <nav class="vertical-nav">
+   
+    <!-- navigation -->
+    <nav class="vertical-nav flex-block">
       <div class="vertical-nav__main-items">
         <div class="vertical-nav__main-items-toggle flex-block">
           <h3>
@@ -132,7 +141,8 @@
         </ul>
       </div>
     </nav>
-
+    
+    <!-- dashboard -->
     <article class="dashboard-block">
       <h2>Dashboard</h2>
       
@@ -141,35 +151,51 @@
       </section>
       
       <section class="dashboard-block__message-board">
-        
-        <div class="dashboard-block__message-board dashboard-block-header-container flex-block">
-          <div class="dashboard-block-header-container__user-data flex-block">
-            
-            <div class="dashboard-block-header-container__user-data-img">
-              <img src="../../assets/thumbnails/user1.jpg" class="user-avatar" alt="user1"> 
+        <div class="dashboard-block__message-board-inner">
+          <div class="dashboard-block__message-board dashboard-block-header-container">
+            <div class="dashboard-block-header-container__user-data flex-block">
+              
+              <div class="dashboard-block-header-container__user-data-img">
+                <img src="../../assets/thumbnails/user1.jpg" class="user-avatar" alt="user1">
+              </div>
+              
+              <div class="dashboard-block-header-container__user-data-meta">
+                <span>{ Name }</span>
+                <span>{ Post time }</span>
+              </div> 
             </div>
-            
-            <div class="dashboard-block-header-container__user-data-meta">
-              <span>Name</span>
-              <span>Post time</span>
-            </div> 
+
+            <div class="dashboard-block-header-container__board-text-block">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti. Ipsam minus ad, sequi voluptas excepturi optio consequatur totam dolorum dicta facere.
+              </p>
+            </div>
+          </div> 
+
+          <div class="dashboard-block__message-board-post-img">
+            <img src="../../assets/posts-images/sunset-surf.jpg" alt="sunset">
           </div>
 
-          <div class="dashboard-block-header-container__board-text-block">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi excepturi sed quam veritatis et eum iusto corrupti. Ipsam minus ad, sequi voluptas excepturi optio consequatur totam dolorum dicta facere.
-            </p>
+          <div class="dashboard-block__message-board-view-comments">
+            <span>
+              View 18 more comments
+            </span>
           </div>
-          
-        </div> 
 
-        <div class="dashboard-block__message-board-post-img">
-          <img src="../../assets/posts-images/sunset-surf.jpg" alt="sunset">
+          <div class="dashboard-block__message-board-post-comment">
+            <div class="dashboard-block__message-board-post-comment-img">
+              <img src="../../assets/thumbnails/user3.jpg" class="user-avatar user-comment" alt="user3">
+            </div>
+            <div class="dashboard-block__message-board-post-comment-text">
+              
+            </div>
+          </div>
         </div>
-
       </section>
+      
     </article>
-
+    
+    <!-- sidebar -->
     <sidebar class="sidebar-block">
       
     </sidebar>
