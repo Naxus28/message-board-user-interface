@@ -37,13 +37,81 @@
         faIconClass: 'th'
       }
     ];
+
+    const followers = [
+      { 
+        id: 1,
+        name: 'user1' 
+      },
+      { 
+        id: 2,
+        name: 'user2' 
+      },
+      { 
+        id: 3,
+        name: 'user3' 
+      },
+      { 
+        id: 4,
+        name: 'user4' 
+      },
+      { 
+        id: 5,
+        name: 'user5' 
+      },
+      { 
+        id: 6,
+        name: 'user6' 
+      },
+      { 
+        id: 7,
+        name: 'user7' 
+      }
+    ];
+
+    const following = [
+      { 
+        id: 4,
+        name: 'user4' 
+      },
+      { 
+        id: 3,
+        name: 'user3' 
+      },
+      { 
+        id: 7,
+        name: 'user7' 
+      },
+      { 
+        id: 6,
+        name: 'user6' 
+      },
+      { 
+        id: 1,
+        name: 'user1' 
+      },
+      { 
+        id: 2,
+        name: 'user2' 
+      },
+      { 
+        id: 5,
+        name: 'user5' 
+      }
+    ];
+
+
+    let getFollowers = () => followers;
+    let getFollowing = () => following;
     let getDashStats = () => dashStats;
       
     //   return $http(requestObj); // returns a promise
     // };
     
     const service = { 
-      getDashStats
+      getDashStats,
+      getFollowers,
+      getFollowing
     };
 
     return service; // exposes API

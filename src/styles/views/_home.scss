@@ -72,6 +72,10 @@ div.header-wrapper__create-new {
     font-size: .75em;
     border-radius: 3px;
     font-weight: 600;
+    transition: all .3s ease;
+    &:hover {
+      background: $cinnabar;
+    }
     i {
       float: right;
       margin-left: 10px;
@@ -448,6 +452,7 @@ div.sidebar-block__following,
 div.sidebar-block__followers {
   img {
     width: 35px;
+    margin-left: .1em;
   }
 }
 div.sidebar-block__recent-items {

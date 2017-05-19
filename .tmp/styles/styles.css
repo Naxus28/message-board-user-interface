@@ -180,7 +180,11 @@ div.header-wrapper__create-new {
     padding: .7em 2em;
     font-size: .75em;
     border-radius: 3px;
-    font-weight: 600; }
+    font-weight: 600;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    div.header-wrapper__create-new button:hover {
+      background: #E63E2F; }
     div.header-wrapper__create-new button i {
       float: right;
       margin-left: 10px; }
@@ -578,7 +582,8 @@ div.sidebar-block__top-chevron {
 
 div.sidebar-block__following img,
 div.sidebar-block__followers img {
-  width: 35px; }
+  width: 35px;
+  margin-left: .1em; }
 
 div.sidebar-block__recent-items {
   -webkit-box-orient: vertical;
