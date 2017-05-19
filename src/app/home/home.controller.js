@@ -5,10 +5,22 @@
     .module('home')
     .controller('HomeCtrl', HomeCtrl);
 
-  function HomeCtrl(homeService) {
+  function HomeCtrl(homeService, $log) {
     let vm = this;
-    vm.dashStats = homeService.getDashStats();
-    vm.followers = homeService.getFollowers(),
-    vm.following = homeService.getFollowing();
+
+    (function fetchUsersData() {
+
+      homeService.fetchData('app/data/dash-stats.json')
+        .then(
+          res => vm.dashStats = res.data.dashStats,
+          err => $log('Error: ', err)
+        );
+      
+      homeService.fetchData('app/data/users.json')
+         .then(
+          res => vm.users = res.data.users,
+          err => $log('Error: ', err)
+        );
+    })();
   }
 })();

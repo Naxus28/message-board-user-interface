@@ -16,8 +16,8 @@
       templateUrl: 'app/directives/dash-stats/dash-stats.html'
     };
 
-    function link(scope) {
-      scope.stats = scope.dashStats;
+    function link() {
+
     }
   }
 })();

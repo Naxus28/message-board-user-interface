@@ -162,7 +162,7 @@
           </div>
         </section>
         <section class="dashboard-block__message-board flex-block">
-          <dash-main-content-directive></dash-main-content-directive>
+          <dash-main-content-directive ></dash-main-content-directive>
           <dash-main-content-directive></dash-main-content-directive>
           <dash-main-content-directive></dash-main-content-directive>
           <dash-main-content-directive></dash-main-content-directive>
@@ -179,11 +179,11 @@
       <div class="sidebar-block__inner">
         <div class="sidebar-block__following">
           <h3>Following</h3>
-          <sidebar-contacts-directive contacts="home.followers"></sidebar-contacts-directive>
+          <sidebar-contacts-directive contacts="home.users.network.followers"></sidebar-contacts-directive>
         </div>
         <div class="sidebar-block__followers">
           <h3>Followers</h3>
-          <sidebar-contacts-directive contacts="home.following"></sidebar-contacts-directive>
+          <sidebar-contacts-directive contacts="home.users.network.followers"></sidebar-contacts-directive>
         </div>
         <div class="sidebar-block__recent-items flex-block">
           <h3>Recent Items</h3>

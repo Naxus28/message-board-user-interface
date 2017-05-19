@@ -16,8 +16,8 @@
       templateUrl: 'app/directives/sidebar-contacts/sidebar-contacts.html'
     };
 
-    function link(scope) {
-      scope.contacts = scope.contacts;
+    function link() {
+      
     }
   }
 })();
