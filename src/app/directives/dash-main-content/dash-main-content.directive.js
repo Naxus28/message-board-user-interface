@@ -19,9 +19,6 @@
 
     function link(scope) {
       scope.users = homeService.mergeMessageDataIntoUserObj(scope.users, scope.messages);
-
-      console.log('msgs: ', scope.users);
-
     }
 
   }
