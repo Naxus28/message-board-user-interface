@@ -112,10 +112,8 @@ div.header-wrapper__user-name {
 
 
 /*
- * MAIN BODY CONTENT
+ * NAV
  */
-
-//navigation
 nav.vertical-nav {
   background: $shark; 
   color: $spun-pearl;
@@ -180,7 +178,9 @@ li.vertical-nav__list-item {
   }
 }
 
-//dasboard
+/*
+ * DASH
+ */
 article.dashboard-block {
   flex: 1;
   background: $alabaster; 
@@ -226,20 +226,25 @@ div.dashboard-block__component-number {
   }
 }
 
-div.dashboard-block__message-board {
+section.dashboard-block__message-board {
   padding-left: 3em;
   padding-right: 3em;
+  padding-top: 2em;
+}
+div.dashboard-block__message-board-inner {
+  border: 1px solid $mercury;
+  margin-bottom: 3em;
 }
 div.dashboard-block-header-container {
   padding: 1.5em;
   background: white;
-  border: 1px solid $mercury;
 }
 div.dashboard-block-header-container__user-data {
   align-items: center;
   margin-bottom: .7em;
 }
-div.dashboard-block-header-container__user-data-meta {
+div.dashboard-block-header-container__user-data-meta,
+div.dashboard-block__message-board-post-comment-text-and-name {
   margin-left: .5em;
 
   span {
@@ -250,7 +255,7 @@ div.dashboard-block-header-container__user-data-meta {
       font-size: .8em;
     }
     &:nth-child(2) {
-      color: $silver;
+      color: $oslo-gray;
       font-weight: 600;
       font-size: .8em;
     }
@@ -279,12 +284,50 @@ div.dashboard-block__message-board-view-comments {
     border-bottom: 1px solid white;
   }
 }
-
+div.dashboard-block__message-board-post-comment {
+  align-items: center;
+  margin-left: .3em;
+  flex-wrap: wrap;
+}
 div.dashboard-block__message-board-post-comment-img {
-  padding: 1em 1.5em; 
+  padding: 1em .5em 1em 1em; 
+  flex: 3%!important;
+}
+div.dashboard-block__message-board-post-comment-text-and-name {
+  padding-top: 1em; 
+  padding-bottom: 1em; 
+  padding-right: .8em; 
+  flex: 89%!important;
+
+  span:first-child {
+    font-size: .8em;
+    font-weight: 600;
+  }
+  span:last-child {
+    line-height: 1.5em;
+    margin-top: .5em;
+  }
+}
+div.dashboard-block__message-board-post-comment-input {
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  display: flex;
+  margin-top: .3em;
+  margin-bottom: 50px;
+
+  input {
+    flex: 1;
+    padding-left: 1em;
+    height: 35px;
+    border: 1px solid $silver;
+    font-weight: 500;
+  }
 }
 
-//sidebar
+/*
+ * SIDEBAR
+ */
 sidebar.sidebar-block {
   flex: .33;
   background: $gallery;
