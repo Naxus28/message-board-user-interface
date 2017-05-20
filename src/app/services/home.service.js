@@ -28,9 +28,10 @@
 
     function mergeMessageDataIntoUserObj(users, messages) {
       return users.map( (user) => {
-        let msgData = getMessageData(messages, user.id);
-        user['messageData'] = {};
-        Object.assign(user.messageData, msgData);
+        let msgDataForUserObj = {
+          messageData: getMessageData(messages, user.id)
+        };
+        Object.assign(user, msgDataForUserObj);
         
         return user;
       });
