@@ -69,7 +69,7 @@ __Note__: because gulp is setup to serve for development only there are no annot
 
 [lodash](https://lodash.com/) - A JavaScript utility library used for modularity and better performance
 
-[sass](http://sass-lang.com/install)- CSS extension language
+[sass](http://sass-lang.com/install) - CSS extension language
 
 
 ## Author
