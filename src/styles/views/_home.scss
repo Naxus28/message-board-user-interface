@@ -318,7 +318,7 @@ section.dashboard-block__message-board {
   height: 590vh;
 
   @media screen and (min-width: 140px) {
-    height: 380vh;
+    height: 340vh;
   }
 
   @media screen and (max-width: 1098px) {
@@ -420,7 +420,7 @@ div.dashboard-block__message-board-post-comment-input {
   width: 100%;
   display: flex;
   margin-top: .3em;
-  margin-bottom: .5em;
+  margin-bottom: .8em;
   div {
     &:last-child {
       flex: 1;
@@ -436,7 +436,6 @@ div.dashboard-block__message-board-post-comment-input {
       font-weight: 500;
     }
   }
-  
 }
 div.dashboard-block__message-board-post-comment-buttons {
   margin-bottom: 2em;

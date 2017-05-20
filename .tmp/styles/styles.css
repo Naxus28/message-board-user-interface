@@ -442,7 +442,7 @@ section.dashboard-block__message-board {
   height: 590vh; }
   @media screen and (min-width: 140px) {
     section.dashboard-block__message-board {
-      height: 380vh; } }
+      height: 340vh; } }
   @media screen and (max-width: 1098px) {
     section.dashboard-block__message-board {
       -webkit-box-orient: horizontal;
@@ -540,7 +540,7 @@ div.dashboard-block__message-board-post-comment-input {
   display: -ms-flexbox;
   display: flex;
   margin-top: .3em;
-  margin-bottom: .5em; }
+  margin-bottom: .8em; }
   div.dashboard-block__message-board-post-comment-input div:last-child {
     -webkit-box-flex: 1;
     -ms-flex: 1;
