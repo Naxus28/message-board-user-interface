@@ -1,4 +1,4 @@
-# A web design exercise inspired on a dribble interface
+# Web design exercise inspired on a dribble interface and built with Angular v1.6
 
 This UI translates the below wireframe into a web page. The page layout was composed mainly with CSS flexbox.
 
