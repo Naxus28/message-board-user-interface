@@ -2,10 +2,10 @@
   'use strict';
   angular
     .module('directives')
-    .directive('dashMainContentDirective', dashMainContentDirective);
+    .directive('messageBoardDirective', messageBoardDirective);
 
   /* @nginject */
-  function dashMainContentDirective (homeService) {
+  function messageBoardDirective (homeService) {
     return {
       restrict: 'E',
       link: link,
@@ -14,12 +14,11 @@
         users: '=',
         messages: '='
       },
-      templateUrl: 'app/directives/dash-main-content/dash-main-content.html'
+      templateUrl: 'app/directives/message-board/message-board.html'
     };
 
     function link(scope) {
       scope.users = homeService.mergeMessageDataIntoUserObj(scope.users, scope.messages);
     }
-
   }
 })();

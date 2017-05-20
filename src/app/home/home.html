@@ -165,9 +165,9 @@
         </section>
         <section class="dashboard-block__message-board flex-block" 
                  ng-if="home.users && home.messages">
-          <dash-main-content-directive users="home.users"
-                                       messages="home.messages">
-          </dash-main-content-directive>
+          <message-board-directive users="home.users"
+                                  messages="home.messages">
+          </message-board-directive>
         </section>
       </section>
     </article>
