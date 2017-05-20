@@ -3,7 +3,7 @@
     <div class="dashboard-block-header-container__user-data flex-block">
       
       <div class="dashboard-block-header-container__user-data-img">
-        <img ng-src="../../assets/thumbnails/{{ user.img }}.jpg" class="user-avatar" alt="{{ user.name }}">
+        <img ng-src="../../assets/img/thumbnails/{{ user.img }}.jpg" class="user-avatar" alt="{{ user.name }}">
       </div>
       
       <div class="dashboard-block-header-container__user-data-meta">
@@ -20,7 +20,7 @@
   </div> 
 
   <div class="dashboard-block__message-board-post-img" ng-if="user.messageData.owner.post_img">
-    <img ng-src="../../assets/posts-images/{{ user.messageData.owner.post_img }}.jpg" alt="{{ user.messageData.owner.post_img }}">
+    <img ng-src="../../assets/img/posts-images/{{ user.messageData.owner.post_img }}.jpg" alt="{{ user.messageData.owner.post_img }}">
   </div>
 
   <div class="dashboard-block__message-board-view-comments">
@@ -31,7 +31,7 @@
 
   <div class="dashboard-block__message-board-post-comment flex-block">
     <div class="dashboard-block__message-board-post-comment-img" ng-if="user.messageData.replier.img">
-      <img ng-src="../../assets/thumbnails/{{ user.messageData.replier.img }}.jpg" class="user-avatar user-comment" alt="{{ user.messageData.replier.img }}">
+      <img ng-src="../../assets/img/thumbnails/{{ user.messageData.replier.img }}.jpg" class="user-avatar user-comment" alt="{{ user.messageData.replier.img }}">
     </div>
     <div class="dashboard-block__message-board-post-comment-text-and-name">
       <span>
@@ -43,7 +43,7 @@
     </div>
     <div class="dashboard-block__message-board-post-comment-input">
       <div>
-        <img ng-src="../../assets/thumbnails/{{ user.messageData.owner.img }}.jpg" class="user-avatar user-reply" alt="{{ user.messageData.owner.name }}">
+        <img ng-src="../../assets/img/thumbnails/{{ user.messageData.owner.img }}.jpg" class="user-avatar user-reply" alt="{{ user.messageData.owner.name }}">
       </div>
       <div>
         <textarea type="text" 
