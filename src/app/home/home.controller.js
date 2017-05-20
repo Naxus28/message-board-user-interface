@@ -20,9 +20,9 @@
       .then(
         res => {
           vm.users = res.data.users;
-          vm.thisUser = authenticationService.getUser(res.data.users);
-          vm.followers = homeService.getContacts(vm.users, vm.thisUser.network.followerIds);
-          vm.following = _.reverse(homeService.getContacts(vm.users, vm.thisUser.network.followingIds));
+          vm.currentUser = authenticationService.getUser(res.data.users);
+          vm.followers = homeService.getContacts(vm.users, vm.currentUser.network.followerIds);
+          vm.following = _.reverse(homeService.getContacts(vm.users, vm.currentUser.network.followingIds));
         },
         err => $log('Error: ', err)
       );

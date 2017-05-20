@@ -164,10 +164,10 @@
           </div>
         </section>
         <section class="dashboard-block__message-board flex-block" 
-                 ng-if="home.users && home.messages && home.thisUser">
+                 ng-if="home.users && home.messages && home.currentUser">
           <message-board-directive users="home.users"
                                    messages="home.messages"
-                                   this-user="home.thisUser">
+                                   current-user="home.currentUser">
           </message-board-directive>
         </section>
       </section>

@@ -13,7 +13,7 @@
       scope: {
         users: '=',
         messages: '=',
-        thisUser: '='
+        currentUser: '='
       },
       templateUrl: 'app/directives/message-board/message-board.html'
     };
