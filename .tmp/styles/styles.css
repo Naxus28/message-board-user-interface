@@ -345,6 +345,8 @@ div.dashboard-block__toggle-nav-sidebar i {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   display: inline-block; }
+  div.dashboard-block__toggle-nav-sidebar i.fa-chevron-right {
+    float: left; }
   div.dashboard-block__toggle-nav-sidebar i.fa-chevron-left {
     float: right; }
   div.dashboard-block__toggle-nav-sidebar i:hover {

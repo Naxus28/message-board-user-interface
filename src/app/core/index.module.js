@@ -3,6 +3,11 @@
   
   angular.module('userInterface', [
     /**
+     * angular modules
+     */
+    // 'ngAnimate',
+
+    /**
      * external libraries
      */
     'ui.router',
