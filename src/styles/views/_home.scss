@@ -56,6 +56,10 @@ div.header-wrapper__search-inner {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       padding: .5em 1em;
+      transition: all .3s ease;
+      &:hover {
+        background: $rolling-stone;
+      }
     }
   }
 }
@@ -446,13 +450,22 @@ div.dashboard-block__message-board-post-comment-buttons {
     background: none;
     margin-right: .5em;
     border-radius: 2px;
+    transition: all .3s ease;
     &:first-child {
       color: $cornflower-blue;
       border: 1px solid $cornflower-blue;
+      &:hover {
+        color: $mariner;
+        border-color: $mariner;
+      }
     }
     &:last-child {
       color: $oslo-gray;
       border: 1px solid $oslo-gray;
+      &:hover {
+        color: $scorpion;
+        border-color: $scorpion;
+      }
     }
 
   }

@@ -160,7 +160,11 @@ div.header-wrapper__search-inner {
     color: white;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    padding: .5em 1em; }
+    padding: .5em 1em;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    div.header-wrapper__search-inner i.fa-search:hover {
+      background: #757677; }
 
 div.header-wrapper__create-new {
   -webkit-box-flex: 1;
@@ -563,13 +567,21 @@ div.dashboard-block__message-board-post-comment-buttons {
     padding: .8em 1em;
     background: none;
     margin-right: .5em;
-    border-radius: 2px; }
+    border-radius: 2px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
     div.dashboard-block__message-board-post-comment-buttons button:first-child {
       color: #6195ED;
       border: 1px solid #6195ED; }
+      div.dashboard-block__message-board-post-comment-buttons button:first-child:hover {
+        color: #2564C0;
+        border-color: #2564C0; }
     div.dashboard-block__message-board-post-comment-buttons button:last-child {
       color: #858688;
       border: 1px solid #858688; }
+      div.dashboard-block__message-board-post-comment-buttons button:last-child:hover {
+        color: #575757;
+        border-color: #575757; }
 
 /*
  * SIDEBAR
