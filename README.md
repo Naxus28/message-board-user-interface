@@ -1,6 +1,6 @@
 # Web design exercise
 
-This UI was built with Angular v1.6 and CSS3 flexbox model layout. It translates the below dribble interface into a web page. The chevron icons on main dashboard and the textareas on the message components toggle hidden UI elements on and off.
+This UI was built with Angular v1.6 and CSS3 flexbox model layout. It translates the below dribble interface into a web page. Although the UI doesn't offer much user interaction the chevron icons on the dashboard and the textareas on the message components toggle hidden UI elements on and off.
 
 ![alt text](src/assets/img/original-comp/dribble.png "Dribble")
 
