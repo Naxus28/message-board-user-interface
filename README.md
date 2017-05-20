@@ -1,6 +1,8 @@
 # A web design exercise inspired on a dribble interface
 
-descriptionion. 
+This UI translates the below wireframe into a web page. The page layout was composed mainly with CSS flexbox.
+
+![alt text](src/assets/original-comp/dribble.png "Dribble")
 
 ## Getting Started
 
