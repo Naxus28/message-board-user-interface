@@ -149,8 +149,9 @@
     <!-- dashboard -->
     <article class="dashboard-block">
       
-      <div class="dashboard-block__open-nav" ng-show="hideNav">
-        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="hideNav = false"></i>
+      <div class="dashboard-block__toggle-nav-sidebar">
+        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="hideNav = false" ng-show="hideNav"></i>
+        <i class="fa fa-chevron-left" aria-hidden="true" ng-click="hideSidebar = false" ng-show="hideSidebar"></i>
       </div>
 
       <h2>Dashboard</h2>

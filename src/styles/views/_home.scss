@@ -222,17 +222,22 @@ article.dashboard-block h2 {
   padding: 1.5em;
   padding-bottom: 1em;
 }
-div.dashboard-block__open-nav i {
+div.dashboard-block__toggle-nav-sidebar i {
   padding: 1em .5em;
   background: $mercury-dark;
   color: $rolling-stone;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  display: inline-block;
+  &.fa-chevron-left {
+    float: right;
+  }
   &:hover {
     background: $loblolly;
     color: white;
   }
 }
+
 section.dashboard-block__stats-components {
   justify-content: space-bewteen;
 }

@@ -338,13 +338,16 @@ article.dashboard-block h2 {
   padding: 1.5em;
   padding-bottom: 1em; }
 
-div.dashboard-block__open-nav i {
+div.dashboard-block__toggle-nav-sidebar i {
   padding: 1em .5em;
   background: #E4E4E4;
   color: #757677;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
-  div.dashboard-block__open-nav i:hover {
+  transition: all .3s ease;
+  display: inline-block; }
+  div.dashboard-block__toggle-nav-sidebar i.fa-chevron-left {
+    float: right; }
+  div.dashboard-block__toggle-nav-sidebar i:hover {
     background: #BDC2CA;
     color: white; }
 
