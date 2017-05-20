@@ -335,8 +335,7 @@ article.dashboard-block {
   background: #F7F7F7; }
 
 article.dashboard-block h2 {
-  padding: 1.5em;
-  padding-bottom: 1em; }
+  padding: 2em 1.5em 1em; }
 
 div.dashboard-block__toggle-nav-sidebar i {
   padding: 1em .5em;
