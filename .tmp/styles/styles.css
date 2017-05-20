@@ -338,6 +338,16 @@ article.dashboard-block h2 {
   padding: 1.5em;
   padding-bottom: 1em; }
 
+div.dashboard-block__open-nav i {
+  padding: 1em .5em;
+  background: #E4E4E4;
+  color: #757677;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  div.dashboard-block__open-nav i:hover {
+    background: #BDC2CA;
+    color: white; }
+
 section.dashboard-block__stats-components {
   -webkit-box-pack: space-bewteen;
   -ms-flex-pack: space-bewteen;

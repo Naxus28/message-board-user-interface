@@ -57,7 +57,7 @@
   <div class="body-content-wrapper flex-block">
    
     <!-- navigation -->
-    <nav class="vertical-nav flex-block" ng-hide="hideMenu">
+    <nav class="vertical-nav flex-block" ng-hide="hideNav">
       <div class="vertical-nav__main-items">
         <div class="vertical-nav__main-items-toggle flex-block">
           <h3>
@@ -65,7 +65,7 @@
           </h3>
           <i class="fa fa-chevron-left vertical-nav__main-items-chevron-left" 
              aria-hidden="true"
-             ng-click="hideMenu = true"></i>
+             ng-click="hideNav = true"></i>
         </div>
         <ul class="vertical-nav__list">
           <li class="vertical-nav__list-item">
@@ -148,6 +148,11 @@
     
     <!-- dashboard -->
     <article class="dashboard-block">
+      
+      <div class="dashboard-block__open-nav" ng-show="hideNav">
+        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="hideNav = false"></i>
+      </div>
+
       <h2>Dashboard</h2>
       
       <section class="dashboard-block__stats-components flex-block">
