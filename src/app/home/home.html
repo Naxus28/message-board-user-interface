@@ -57,13 +57,15 @@
   <div class="body-content-wrapper flex-block">
    
     <!-- navigation -->
-    <nav class="vertical-nav flex-block">
+    <nav class="vertical-nav flex-block" ng-hide="hideMenu">
       <div class="vertical-nav__main-items">
         <div class="vertical-nav__main-items-toggle flex-block">
           <h3>
             Main
           </h3>
-          <i class="fa fa-chevron-left vertical-nav__main-items-chevron-left" aria-hidden="true"></i>
+          <i class="fa fa-chevron-left vertical-nav__main-items-chevron-left" 
+             aria-hidden="true"
+             ng-click="hideMenu = true"></i>
         </div>
         <ul class="vertical-nav__list">
           <li class="vertical-nav__list-item">
@@ -174,9 +176,9 @@
     </article>
     
     <!-- sidebar -->
-    <sidebar class="sidebar-block">
+    <sidebar class="sidebar-block" ng-hide="hideSidebar">
       <div class="sidebar-block__top-chevron">
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="hideSidebar = true"></i>
       </div>
       <div class="sidebar-block__inner">
         <div class="sidebar-block__following" ng-if="home.following">
