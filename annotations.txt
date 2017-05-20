@@ -1,5 +1,0 @@
-full width = 1136px
-vertical menu = 153px
-content = 741px | margin-left/right: 41px
-sidebar = 242px
-post block = 322px (inside 741px) margin between posts 24px margin bottom 106px
