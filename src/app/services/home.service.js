@@ -31,6 +31,7 @@
         let msgDataForUserObj = {
           messageData: getMessageData(messages, user.id)
         };
+
         Object.assign(user, msgDataForUserObj);
         
         return user;

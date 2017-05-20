@@ -5,7 +5,7 @@
     .module('home')
     .controller('HomeCtrl', HomeCtrl);
 
-  function HomeCtrl(homeService, $log) {
+  function HomeCtrl($log, homeService, authenticationService) {
     let vm = this;
 
     (function fetchUsersData() {
@@ -20,9 +20,9 @@
       .then(
         res => {
           vm.users = res.data.users;
-          let thisUser = _.find(res.data.users, (user) => user.id === 1); // mocks a user login
-          vm.followers = homeService.getContacts(vm.users, thisUser.network.followerIds);
-          vm.following = _.reverse(homeService.getContacts(vm.users, thisUser.network.followingIds));
+          vm.thisUser = authenticationService.getUser(res.data.users);
+          vm.followers = homeService.getContacts(vm.users, vm.thisUser.network.followerIds);
+          vm.following = _.reverse(homeService.getContacts(vm.users, vm.thisUser.network.followingIds));
         },
         err => $log('Error: ', err)
       );

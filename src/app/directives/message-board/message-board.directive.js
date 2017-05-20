@@ -12,7 +12,8 @@
       replace: true,
       scope: {
         users: '=',
-        messages: '='
+        messages: '=',
+        thisUser: '='
       },
       templateUrl: 'app/directives/message-board/message-board.html'
     };
