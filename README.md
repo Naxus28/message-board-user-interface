@@ -1,6 +1,6 @@
-# Web design exercise inspired on a dribble interface and built with Angular v1.6 and CSS3 flexbox model layout
+# Web design exercise
 
-This UI translates the below wireframe into a web page.
+This UI was built with Angular v1.6 and CSS3 flexbox model layout. It translates the below dribble interface into a web page.
 
 ![alt text](src/assets/img/original-comp/dribble.png "Dribble")
 
