@@ -26,9 +26,9 @@ Open a terminal window and:
 ```bash
 $ cd ~/Sites #or wherever you keep your projects
 
-$ git clone https://github.com/Naxus28/dribble-user-interface.git
+$ git clone https://github.com/Naxus28/message-board-user-interface.git
 
-$ cd dribble-user-interface
+$ cd message-board-user-interface
 
 $ npm install #npm postinstall will run bower install and serve app on port 3000 (http://localhost:3000)
 ```
