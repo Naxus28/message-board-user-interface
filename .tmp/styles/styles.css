@@ -551,13 +551,15 @@ div.dashboard-block__message-board-post-comment-input {
     flex: 1; }
   div.dashboard-block__message-board-post-comment-input div textarea {
     width: 100%;
-    margin-left: .5em;
     padding-left: 1em;
     padding-top: .8em;
     resize: none;
     height: 35px;
     border: 1px solid #C2C2C2;
     font-weight: 500; }
+
+div.dashboard-block__message-board-post-comment-input-img {
+  margin-right: .5em; }
 
 div.dashboard-block__message-board-post-comment-buttons {
   margin-bottom: 2em;
