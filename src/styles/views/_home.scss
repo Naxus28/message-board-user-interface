@@ -86,6 +86,28 @@ div.header-wrapper__alerts {
   justify-content: space-around;
   align-items: center;
   background: $alabaster;
+  position: relative;
+  span {
+    display: block;
+    color: $burnt-sienna;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid $burnt-sienna;
+    font-size: .6em;
+    padding: .4em;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    position: absolute;
+    top:17px;
+  }
+  span.header-wrapper__alerts-calendar--icon-on {
+    right: 122px;
+  }
+  span.header-wrapper__alerts-list--list-on {
+    right: 13px;
+  }
 }
 div.header-wrapper__alerts-icon {
   i {

@@ -195,7 +195,26 @@ div.header-wrapper__alerts {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #F7F7F7; }
+  background: #F7F7F7;
+  position: relative; }
+  div.header-wrapper__alerts span {
+    display: block;
+    color: #E6614F;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #E6614F;
+    font-size: .6em;
+    padding: .4em;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 17px; }
+  div.header-wrapper__alerts span.header-wrapper__alerts-calendar--icon-on {
+    right: 122px; }
+  div.header-wrapper__alerts span.header-wrapper__alerts-list--list-on {
+    right: 13px; }
 
 div.header-wrapper__alerts-icon i {
   color: #828282;
