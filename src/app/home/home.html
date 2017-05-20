@@ -52,12 +52,12 @@
       </div>
     </div>
   </header>
-  
+
   <!-- main body content -->
   <div class="body-content-wrapper flex-block">
    
     <!-- navigation -->
-    <nav class="vertical-nav flex-block" ng-hide="hideNav">
+    <nav class="vertical-nav flex-block" ng-show="showNav">
       <div class="vertical-nav__main-items">
         <div class="vertical-nav__main-items-toggle flex-block">
           <h3>
@@ -65,7 +65,7 @@
           </h3>
           <i class="fa fa-chevron-left vertical-nav__main-items-chevron-left" 
              aria-hidden="true"
-             ng-click="hideNav = true"></i>
+             ng-click="showNav = false"></i>
         </div>
         <ul class="vertical-nav__list">
           <li class="vertical-nav__list-item">
@@ -150,8 +150,8 @@
     <article class="dashboard-block">
       
       <div class="dashboard-block__toggle-nav-sidebar">
-        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="hideNav = false" ng-show="hideNav"></i>
-        <i class="fa fa-chevron-left" aria-hidden="true" ng-click="hideSidebar = false" ng-show="hideSidebar"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="showNav = true" ng-hide="showNav"></i>
+        <i class="fa fa-chevron-left" aria-hidden="true" ng-click="showSidebar = true" ng-hide="showSidebar"></i>
       </div>
 
       <h2>Dashboard</h2>
@@ -182,9 +182,9 @@
     </article>
     
     <!-- sidebar -->
-    <sidebar class="sidebar-block" ng-hide="hideSidebar">
+    <sidebar class="sidebar-block" ng-show="showSidebar">
       <div class="sidebar-block__top-chevron">
-        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="hideSidebar = true"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" ng-click="showSidebar = false"></i>
       </div>
       <div class="sidebar-block__inner">
         <div class="sidebar-block__following" ng-if="home.following">

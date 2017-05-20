@@ -609,9 +609,6 @@ sidebar.sidebar-block {
   -webkit-box-flex: .33;
   -ms-flex: .33;
   flex: .33;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
