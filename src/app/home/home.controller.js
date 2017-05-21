@@ -8,8 +8,7 @@
   function HomeCtrl($log, homeService, authenticationService) {
     let vm = this;
 
-    (function fetchUsersData() {
-
+    (function () {
       homeService.fetchData('app/data/dash-stats.json')
       .then(
         res => vm.dashStats = res.data.dashStats,
