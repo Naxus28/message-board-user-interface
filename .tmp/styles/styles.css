@@ -56,7 +56,7 @@ table {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body {
+html, body, div.site-wrapper {
   height: 100%;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -709,5 +709,22 @@ div.sidebar-block__recent-items {
       margin-right: .5em; }
       div.sidebar-block__recent-items div i.fa-phone {
         margin-right: .8em; }
+
+div.error-wrapper {
+  background: #EDEDED;
+  height: 100%;
+  padding-top: 200px; }
+  div.error-wrapper h2 {
+    text-align: center;
+    font-size: 2.5em; }
+  div.error-wrapper span {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5em; }
+  div.error-wrapper p {
+    margin-top: 40px;
+    font-size: 1.5em;
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
