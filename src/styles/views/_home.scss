@@ -56,7 +56,7 @@ div.header-wrapper__search-inner {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       padding: .5em 1em;
-      transition: all .3s ease;
+      @include transition(all, .3s, ease);
       &:hover {
         background: $rolling-stone;
       }
@@ -76,7 +76,7 @@ div.header-wrapper__create-new {
     font-size: .75em;
     border-radius: 3px;
     font-weight: 600;
-    transition: all .3s ease;
+    @include transition(all, .3s, ease);
     &:hover {
       background: $cinnabar;
     }
@@ -131,7 +131,7 @@ div.header-wrapper__user {
 }
 div.header-wrapper__alerts-icon {
   i {
-    transition: all .3s ease;
+    @include transition(all, .3s, ease);
     &:hover {
       color: $shark;
     }
@@ -181,18 +181,15 @@ div.vertical-nav__main-items-toggle {
   i {
     padding: 1em .5em;
     background: $shuttle-gray;
-    transition: all .3s ease;
-    &:hover {
-      color: white;
-      background: $loblolly;
-    }
+    @include transition(all, .3s, ease);
+    @include bg-color-hover($loblolly, white);
   }
 }
 li.vertical-nav__list-item { 
   padding: .7em 2.35em;
   display: flex;
   align-items: center;
-  transition: all .3s ease;
+  @include transition(all, .3s, ease);
   &:hover {
     color: white!important;
     background: $shuttle-gray;
@@ -204,7 +201,7 @@ li.vertical-nav__list-item {
     padding-top: 1.4em;
   }
   i {
-    transition: all .3s ease;
+    @include transition(all, .3s, ease);
     font-size: 1.4em;
     padding-right: .5em;
     color: $mid-gray;
@@ -225,18 +222,15 @@ div.dashboard-block__toggle-nav-sidebar i {
   padding: 1em .5em;
   background: $mercury-dark;
   color: $rolling-stone;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
   display: inline-block;
+  @include transition(all, .3s, ease);
+  @include bg-color-hover($loblolly, white);
+
   &.fa-chevron-right {
     float: left;
   }
   &.fa-chevron-left {
     float: right;
-  }
-  &:hover {
-    background: $loblolly;
-    color: white;
   }
 }
 
@@ -313,22 +307,16 @@ div.dashboard-block__message-board-msg-controls-post-area {
     background: $alabaster;
     font-weight: 600;
     border: 1px solid $mercury;
-    transition: all .3s ease;
-    &:hover {
-      background: $loblolly;
-      color: white;
-    }
+    @include transition(all, .3s, ease);
+    @include bg-color-hover($loblolly, white);
   }
   i {
     font-size: 1.3em;
     padding: .35em;
     background: $alabaster;
     border: 1px solid $mercury;
-    transition: all .3s ease;
-    &:hover {
-      background: $loblolly;
-      color: white;
-    }
+    @include transition(all, .3s, ease);
+    @include bg-color-hover($loblolly, white);
   }
 }
 section.dashboard-block__message-board {
@@ -471,22 +459,16 @@ div.dashboard-block__message-board-post-comment-buttons {
     background: none;
     margin-right: .5em;
     border-radius: 2px;
-    transition: all .3s ease;
+    @include transition(all, .3s, ease);
     &:first-child {
       color: $cornflower-blue;
       border: 1px solid $cornflower-blue;
-      &:hover {
-        color: $mariner;
-        border-color: $mariner;
-      }
+      @include br-color-hover($mariner, $mariner);
     }
     &:last-child {
       color: $oslo-gray;
       border: 1px solid $oslo-gray;
-      &:hover {
-        color: $scorpion;
-        border-color: $scorpion;
-      }
+      @include br-color-hover($mariner, $mariner);
     }
 
   }
@@ -547,11 +529,8 @@ div.sidebar-block__top-chevron {
     padding: 1em .5em;
     background: $mercury-dark;
     color: $rolling-stone;
-    transition: all .3s ease;
-    &:hover {
-      background: $loblolly;
-      color: white;
-    }
+    @include transition(all, .3s, ease);
+    @include bg-color-hover($loblolly, white);
   }
 }
 div.sidebar-block__following,

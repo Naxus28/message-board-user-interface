@@ -4,7 +4,6 @@
     .module('services')
     .factory('authenticationService', authenticationService);
 
-  /* @ngInject */
   function authenticationService() {
 
     // mocks a backend login API (using 'id' for dual factor authentication instead of password)

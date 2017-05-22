@@ -9,3 +9,20 @@
     -moz-osx-font-smoothing: auto;
   }
 }
+@mixin transition($property, $duration, $timing) {
+  -webkit-transition: $property $duration $timing;
+  -moz: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+@mixin bg-color-hover($bg, $color) {
+  &:hover {
+    background: $bg;
+    color: $color;
+  }
+}
+@mixin br-color-hover($color, $border-color) {
+  &:hover {
+    color: $color;
+    border: $border-color;
+  }
+}
