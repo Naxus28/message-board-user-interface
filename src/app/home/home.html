@@ -44,10 +44,10 @@
       <!-- user -->
       <div class="header-wrapper__user flex-block">
         <div class="header-wrapper__user-name">
-          <span>Stephanie</span>
+          <span>{{ home.currentUser.name }}</span>
         </div>
         <div class="header-wrapper__user-img">
-          <img src="../../assets/img/thumbnails/user2.jpg" class="user-avatar" alt="stephanie">
+          <img src="../../assets/img/thumbnails/{{ home.currentUser.img }}.jpg" class="user-avatar" alt="{{ home.currentUser.name }}">
         </div>
       </div>
     </div>
