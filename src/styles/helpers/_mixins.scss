@@ -23,6 +23,6 @@
 @mixin br-color-hover($color, $border-color) {
   &:hover {
     color: $color;
-    border: $border-color;
+    border-color: $border-color;
   }
 }

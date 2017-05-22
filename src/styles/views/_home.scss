@@ -476,7 +476,7 @@ div.dashboard-block__message-board-post-comment-buttons {
     &:last-child {
       color: $oslo-gray;
       border: 1px solid $oslo-gray;
-      @include br-color-hover($mariner, $mariner);
+      @include br-color-hover($scorpion, $scorpion);
     }
 
   }
