@@ -179,7 +179,7 @@ div.vertical-nav__main-items-toggle {
     border-bottom: none!important;
   }
   i {
-    padding: 1em .5em;
+    @extend .chevron-toggle-nav-sidebar;
     background: $shuttle-gray;
     @include transition(all, .3s, ease);
     @include bg-color-hover($loblolly, white);
@@ -219,10 +219,9 @@ article.dashboard-block h2 {
   padding: 2em 1.5em 1em;
 }
 div.dashboard-block__toggle-nav-sidebar i {
-  padding: 1em .5em;
+  @extend .chevron-toggle-nav-sidebar;
   background: $mercury-dark;
   color: $rolling-stone;
-  display: inline-block;
   @include transition(all, .3s, ease);
   @include bg-color-hover($loblolly, white);
 
@@ -477,7 +476,6 @@ div.dashboard-block__message-board-post-comment-buttons {
 /*
  * SIDEBAR
  */
-
 sidebar.sidebar-block {
   flex: .33;
   flex-direction: column;
@@ -526,7 +524,7 @@ div.sidebar-block__top-chevron {
   padding-bottom:  2.8em;
   
   i {
-    padding: 1em .5em;
+    @extend .chevron-toggle-nav-sidebar;
     background: $mercury-dark;
     color: $rolling-stone;
     @include transition(all, .3s, ease);
