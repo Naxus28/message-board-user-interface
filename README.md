@@ -1,4 +1,4 @@
-# Web design exercise
+# Web design exercise inspired on a dribble interface
 
 This UI was built with Angular v1.6 and CSS3 flexbox model layout. It translates the below dribble interface into a web page. Although the UI doesn't offer much user interaction the chevron icons on the dashboard and the textareas on the message components toggle hidden UI elements on and off. Static data models and APIs were implemented to mock backend functionality. 
 
