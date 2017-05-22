@@ -279,6 +279,7 @@ section.dashboard-block__message-board-wrapper {
   padding-left: 3em;
   padding-right: 3em;
   padding-top: 2em;
+  overflow: hidden;
 }
 section.dashboard-block__message-board-msg-controls {
   margin-bottom: 1em;
@@ -325,17 +326,27 @@ section.dashboard-block__message-board {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 590vh;
+  height: 200vw;
 
-  @media screen and (min-width: 140px) {
-    height: 340vh;
+  @media screen and (min-width: 1700px) {
+    height: 150vw;
   }
-
+  @media screen and (min-width: 1500px) and (max-width: 1699px){
+    height: 160vw;
+  }
+  @media screen and (min-width: 1400px) and (max-width: 1499px){
+    height: 180vw;
+  }
+  @media screen and (min-width: 1351px) and (max-width: 1399px){
+    height: 210vw;
+  }
+  @media screen and (min-width: 1099px) and (max-width: 1350px){
+    height: 225vw;
+  }
   @media screen and (max-width: 1098px) {
     flex-direction: row;
     height: 100%!important;
   }
-
 }
 div.dashboard-block__message-board-inner {
   border: 1px solid $mercury;
@@ -406,8 +417,6 @@ div.dashboard-block__message-board-post-comment {
 }
 div.dashboard-block__message-board-post-comment-img {
   padding: 1em .5em 1em 1em; 
-  // flex: 3%!important;
-  // align-self: flex-start;
 }
 div.dashboard-block__message-board-post-comment-text-and-name {
   padding-top: 1em; 

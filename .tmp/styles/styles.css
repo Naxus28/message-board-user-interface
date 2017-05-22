@@ -406,7 +406,8 @@ div.dashboard-block__component-number {
 section.dashboard-block__message-board-wrapper {
   padding-left: 3em;
   padding-right: 3em;
-  padding-top: 2em; }
+  padding-top: 2em;
+  overflow: hidden; }
 
 section.dashboard-block__message-board-msg-controls {
   margin-bottom: 1em;
@@ -469,10 +470,22 @@ section.dashboard-block__message-board {
   -webkit-box-direction: normal;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 590vh; }
-  @media screen and (min-width: 140px) {
+  height: 200vw; }
+  @media screen and (min-width: 1700px) {
     section.dashboard-block__message-board {
-      height: 340vh; } }
+      height: 150vw; } }
+  @media screen and (min-width: 1500px) and (max-width: 1699px) {
+    section.dashboard-block__message-board {
+      height: 160vw; } }
+  @media screen and (min-width: 1400px) and (max-width: 1499px) {
+    section.dashboard-block__message-board {
+      height: 180vw; } }
+  @media screen and (min-width: 1351px) and (max-width: 1399px) {
+    section.dashboard-block__message-board {
+      height: 210vw; } }
+  @media screen and (min-width: 1099px) and (max-width: 1350px) {
+    section.dashboard-block__message-board {
+      height: 225vw; } }
   @media screen and (max-width: 1098px) {
     section.dashboard-block__message-board {
       -webkit-box-orient: horizontal;
