@@ -22,14 +22,14 @@
       return users.filter( (user) => _.find(contactsIds, (id) => id === user.id));
     }
     
-    function getMessageData(messages, userId) {
+    function getMessageDataForUser(messages, userId) {
       return _.find(messages, (message) => message.owner.id === userId);
     }
 
     function mergeMessageDataIntoUserObj(users, messages) {
       return users.map( (user) => {
         let msgDataForUserObj = {
-          messageData: getMessageData(messages, user.id)
+          messageData: getMessageDataForUser(messages, user.id)
         };
 
         Object.assign(user, msgDataForUserObj);
