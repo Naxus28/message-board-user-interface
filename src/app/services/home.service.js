@@ -6,7 +6,7 @@
 
   function homeService($http) {
 
-    function fetchData(url) {
+    let fetchData = (url) => {
       const requestObj = { 
         method: 'GET', 
         url: url,
@@ -16,27 +16,21 @@
       };
 
       return $http(requestObj);
-    }
+    };
 
-    function getContacts(users, contactsIds) {
-      return users.filter( (user) => _.find(contactsIds, (id) => id === user.id));
-    }
+    let getContacts = (users, contactsIds) => users.filter( (user) => _.find(contactsIds, (id) => id === user.id));
     
-    function getMessageDataForUser(messages, userId) {
-      return _.find(messages, (message) => message.owner.id === userId);
-    }
+    let getMessageDataForUser = (messages, userId) => _.find(messages, (message) => message.owner.id === userId);
 
-    function mergeMessageDataIntoUserObj(users, messages) {
+    let mergeMessageDataIntoUserObj = (users, messages) => {
       return users.map( (user) => {
         let msgDataForUserObj = {
           messageData: getMessageDataForUser(messages, user.id)
         };
 
-        Object.assign(user, msgDataForUserObj);
-        
-        return user;
+        return Object.assign({}, user, msgDataForUserObj); // avoid mutation of user obj
       });
-    }
+    };
 
     const service = { 
       fetchData,
